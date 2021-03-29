@@ -240,7 +240,7 @@ button {
         margin-left: 1rem;
     }
     #banner {
-        height: 100vh;
+        height: 90vh;
     }
     .mainButtons {
         margin-top: 3rem;
@@ -254,7 +254,7 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
         left: 50%;
-        bottom: 50px;
+        bottom: 13vh;
     }
     .switchInner {
         background-image: url(../img/switchInner.svg);
@@ -265,23 +265,20 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
         left: 50%;
-        bottom: 25px;
+        bottom: 13vh;
         transition: .6s;
-        animation: MoveUpDown 2s linear infinite;
+        animation: MoveUpDown 1.7s linear infinite;
     }
     #section1 {
         margin-left: 3rem !important;
     }
 }
 
-@keyframes MoveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
+@keyframes MoveUpDown
+{
+  from {transform: translateY(0px); opacity: 1;}
+  to { transform: translateY(30px); opacity: 0;}
+}
 
 
 .display-3 {
