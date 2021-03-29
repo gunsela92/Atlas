@@ -20,6 +20,7 @@ $(function () {
         "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
         backgrounds[(current = ++current % backgrounds.length)],
     });
+    
 
     setTimeout(nextBackground, 20000);
   }
@@ -93,9 +94,9 @@ $(document).ready(function(){
          $(".navbar").css('transition', '500ms linear');
          $("#mainLogo").attr("src","./img/MECELLEM-logo.svg");
          $('.navbar .nav-link').attr('style', 'color: gray !important');
-         $('.language').attr('style', 'border: 1px solid #6e7173 !important; color: #6e7173 !important');
-         $('.dropdown-item').attr('style', 'color: #6e7173 !important');
-         $('.dropdown-menu').attr('style', 'border: 1px solid #6e7173 !important');
+         $('.language').attr('style', 'border: 1px solid #5C605F !important; color: #5C605F !important');
+         $('.dropdown-item').attr('style', 'color: #5C605F !important');
+         $('.dropdown-menu').attr('style', 'border: 1px solid #5C605F !important');
          $('.navbar-toggler-icon').removeClass('light');
          $('.navbar-toggler-icon').addClass('dark');
       } else {
