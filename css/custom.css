@@ -40,6 +40,7 @@ button {
 .jumbotron {
     margin-bottom: 0 !important;
     height: 100vh;
+    border-radius: 0 !important;
 }
 
 .searchbtn {
@@ -49,7 +50,7 @@ button {
     font-size: 1rem !important;
     font-weight: bold !important;
     padding: 1rem 3rem !important;
-    width: 11rem;
+    width: 12.5rem;
     font-family: ProximaBold;
 }
 
@@ -63,7 +64,7 @@ button {
     font-size: 1rem !important;
     font-weight: bold !important;
     padding: 1rem 3rem !important;
-    width: 11rem;
+    width: 12.5rem;
     font-family: ProximaBold;
 }
 
@@ -187,7 +188,7 @@ button {
         background-color: transparent !important;
         text-align: left !important;
     }
-    .btn-secondary {
+    .language {
         border-color: white !important;
     }
     .nav-item:hover {
@@ -264,13 +265,24 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
         left: 50%;
-        bottom: 50px;
+        bottom: 25px;
         transition: .6s;
+        animation: MoveUpDown 2s linear infinite;
     }
     #section1 {
         margin-left: 3rem !important;
     }
 }
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
 
 .display-3 {
     font-size: 4rem !important;
@@ -447,4 +459,32 @@ button {
 
   #footer {
       color: black;
+  }
+
+  .light {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+
+  .dark {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+
+  @media only screen and (max-width: 990px) and (min-width: 576px) {
+      .dropdown-menu, .language {
+          margin-left: 25px;
+      }
+  }
+
+  @media only screen and (max-width: 950px) {
+      .switch, .switchInner {
+          display: none;
+      }
+      .products {
+          justify-content: center !important;
+      }
+  }
+
+  .navbar .fixed-top .scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
   }
