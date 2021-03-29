@@ -1,13 +1,13 @@
 var body = $("#banner");
 var backgrounds = [
-  "url(../img/background/gorsel1.png)",
-  "url(../img/background/gorsel2.jpg)",
-  "url(../img/background/gorsel3.jpg)",
-  "url(../img/background/gorsel4.jpg)",
-  "url(../img/background/gorsel5.jpg)",
-  "url(../img/background/gorsel6.jpg)",
-  "url(../img/background/gorsel7.jpg)",
-  "url(../img/background/gorsel8.jpg)",
+  "url(./img/background/gorsel1.png)",
+  "url(./img/background/gorsel2.jpg)",
+  "url(./img/background/gorsel3.jpg)",
+  "url(./img/background/gorsel4.jpg)",
+  "url(./img/background/gorsel5.jpg)",
+  "url(./img/background/gorsel6.jpg)",
+  "url(./img/background/gorsel7.jpg)",
+  "url(./img/background/gorsel8.jpg)",
 ];
 var current = 0;
 
