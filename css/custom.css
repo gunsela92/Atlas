@@ -1,0 +1,450 @@
+/********** common setting **********/
+@font-face {
+    font-family: Proxima;
+    src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ProximaBold;
+    font-weight: bold;
+    src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+
+html, body, html * {
+  font-family: Proxima;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    color: white !important;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+    height: 100vh;
+}
+
+.searchbtn {
+    border:1px solid white !important;
+    background: white !important;
+    color: black;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    padding: 1rem 3rem !important;
+    width: 11rem;
+    font-family: ProximaBold;
+}
+
+.searchbtn:hover {
+    color: black !important;
+}
+
+.loginBtn {
+    border:2px solid white !important;
+    color: white !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    padding: 1rem 3rem !important;
+    width: 11rem;
+    font-family: ProximaBold;
+}
+
+.loginBtn:hover {
+    color: black !important;
+    background: white !important;
+}
+
+.atlas-cta {
+    border-radius: 10px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.login {
+    border:1px solid white;
+    background: white
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+/********** feature (skew background) **********/
+.feature {
+    height: auto;
+}
+
+.feature img {
+    width: 100%;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+#banner {
+    height: auto;
+    transition: background 1s linear;
+    background-size: cover !important;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%),url(/img/background/gorsel1.png);
+}
+
+@media (min-width: 576px) {
+    header {
+        position: relative;
+        bottom: 66px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .language {
+        border-radius: 80px !important;
+        line-height: 1.2rem !important;
+        width: 5rem !important;
+        background-color: transparent !important;
+        text-align: left !important;
+    }
+    .btn-secondary {
+        border-color: white !important;
+    }
+    .nav-item:hover {
+        box-shadow:  inset 0px 6px 0px #CA7033;
+        color: #CA7033 !important;
+        transition: 0.5s;
+    }
+    .navbar-nav.ml-auto {
+        height: 100% !important;
+        line-height: 65px !important;
+    }
+    .collapse .navbar-collapse {
+        height: 80px;
+    }
+    .dropdown-menu {
+        padding: 0 !important;
+        border-radius: 50px !important;
+        background-color: transparent !important;
+        min-width: 62px !important;
+        border: 1px solid white !important;
+        text-align: center !important;
+    }
+    .dropdown-toggle::after {
+        margin-top: .4em;
+        float: right;
+    }
+    .dropdown:hover > .dropdown-menu  {
+        display: block;
+    }
+    
+    .dropdown-menu:hover {
+        display: block;
+    }
+    
+    .dropdown > .dropdown-toggle:active {
+        pointer-events: none;
+    }
+    
+    .dropdown-item , .dropdown-menu {
+        background: transparent !important;
+        color: white !important;
+        width: 5rem;
+        text-align: left !important;
+    }
+    .dropdown-item {
+        padding: .25rem 1rem !important;
+    }
+    .loginBtn {
+        margin-left: 1rem;
+    }
+    #banner {
+        height: 100vh;
+    }
+    .mainButtons {
+        margin-top: 3rem;
+    }
+    .switch {
+        background-image: url(/img/switchIcon.svg);
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 50%;
+        bottom: 50px;
+    }
+    .switchInner {
+        background-image: url(/img/switchInner.svg);
+        position: absolute;
+        margin: 0 auto;
+        height: 70px;
+        width: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 50%;
+        bottom: 50px;
+        transition: .6s;
+    }
+    #section1 {
+        margin-left: 3rem !important;
+    }
+}
+
+.display-3 {
+    font-size: 4rem !important;
+}
+
+.headerComment {
+    font-size: 1.2rem !important;
+}
+
+.carousel-indicators {
+    bottom: -50px !important;
+}
+
+.card.mb-2 {
+    border:5px solid lightgray !important;
+}
+
+#section2 {
+    background:#212121;
+}
+
+#section2:hover {
+    transition: 0.5s;
+}
+
+.hakkindaBg {
+    padding: 4rem 0rem 4rem 2rem;
+    float: right;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    max-width: unset;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -moz-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.hakkindaBg:hover {
+    opacity:0;
+}
+
+#section3 {
+    background:#212121;
+    color: white;
+}
+
+.card {
+    color: gray;
+    transition: 0.5s;
+    overflow: hidden;
+    border: 5px solid lightgray !important;
+    border-radius: 1.25rem !important;
+}
+
+.card:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 4pt 3pt orange;
+}
+
+.card img {
+    height: 250px;
+    transform: scaleX(2);
+}
+
+/* FORM */
+
+#success-message {
+    opacity: 0;
+  }
+  
+  .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+    padding: 0 20% 0 20%;
+  }
+  
+  .margin-top-25 {
+    margin-top: 25px;
+  }
+  
+  .form-title {
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  
+  .form-group .form-control {
+    -webkit-box-shadow: none;
+    border-bottom: 1px;
+    border-style: none none solid none;
+    border-radius:0; 
+    border-color: #000;
+  }
+  
+  .form-group .form-control:focus {
+      box-shadow: none;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .btn-mod.btn-large {
+      height: auto;
+      padding: 13px 52px;
+      font-size: 15px;
+  }
+  
+  .btn-mod.btn-border {
+      color: white;
+      background: #9E9E9E;
+  }
+  
+  .btn-mod, a.btn-mod {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 4px 13px;
+      color: #fff;
+      background: rgba(34,34,34, .9);
+      border: 1px solid transparent;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  }
+  
+  .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
+      color: #fff;
+      background: #d3d3d3;
+      outline: none;
+  }
+  
+  @media only screen and (max-width: 500px) {
+      .btn-mod.btn-large {
+         padding: 6px 16px;
+         font-size: 11px;
+      }
+    
+      .form-title {
+          font-size: 20px;
+    }
+  }
+
+  .form-group input {
+      background: #e9ecef;
+  }
+
+  #message {
+    background: #e9ecef;
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+
+  #contact {
+      color: rgb(80, 79, 79);
+      height: auto;
+  }
+
+  #footer {
+      color: black;
+  }
