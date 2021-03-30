@@ -10,10 +10,9 @@
   <!-- custom.css -->
   <link rel="stylesheet" href="css/custom.css">
   <!-- bootstrap.min.css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <!-- AOS -->
   <link rel="stylesheet" href="css/aos.css">
 </head>
@@ -24,7 +23,7 @@
     <header>
       <!-- NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light p-0 fixed-top">
-        <div class="container">
+        <div class="container" id="mainBar">
           <a href="#section1" class="navbar-brand">
             <!-- Logo Image -->
             <img id="mainLogo" src="img/MECELLEM-logo-white-01.svg" width="200" alt=""
@@ -39,7 +38,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href="#section2" class="nav-link">HAKKINDA</a></li>
               <li class="nav-item ml-2"><a href="#section3" class="nav-link">ÜRÜNLER</a></li>
-              <li class="nav-item ml-2"><a href="#" class="nav-link">İLETİŞİM</a></li>
+              <li class="nav-item ml-2"><a href="#contact" class="nav-link">İLETİŞİM</a></li>
             </ul>
             <div class="dropdown ml-5">
               <button class="btn btn-secondary dropdown-toggle language" type="button" id="dropdownMenuButton"
@@ -67,23 +66,22 @@
         <br> Illum iusto laoreet his te. Lorem partiendo mel ex. Ad vitae admodum voluptatum per.
       </p>
       <div class="mainButtons">
-        <a href="#section2" type="button" class="btn btn-outline-secondary btn-lg mt-4 searchbtn">KEŞFET</a>
-        <a type="button" class="btn btn-outline-secondary btn-lg mt-4 loginBtn">GİRİŞ</a>
+        <a href="#section2"  class="btn btn-outline-secondary btn-lg mt-4 searchbtn">KEŞFET</a>
+        <a  class="btn btn-outline-secondary btn-lg mt-4 loginBtn">GİRİŞ</a>
       </div>
       <a href="#section2" class="switch"></a>
       <a href="#section2" class="switchInner"></a>
     </div>
   </div>
   <!-- feature (skew background) -->
-  <div class="jumbotron jumbotron-fluid" id="section2">
-    <div class="container-fluid my-5 d-flex h-100">
-      <img class="hakkindaBg" src="img/hakkında-backround-opy50.svg" />
-      <div class="row justify-content-md-center text-center text-md-center align-items-center w-100">
+    <div class="container-fluid py-5 d-flex mb-6 hakkinda" id="section2">
+
+      <div class="row text-center align-items-center w-100">
         <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-          <h2 class="font-weight-bold align-self-center">Mecellem Nedir</h2>
+          <h2 class="font-weight-bold align-self-left pl-3 contactus">Mecellem Nedir</h2>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
-          class="col-md-4 ml-5 w-100 float-right align-self-center text-md-left">
+          class="col-md-4 w-100 float-right align-self-center text-md-left pl-5 aboutus">
           <h5>Lorem ipsum dolor sit amet, id nec enim autem oblique, ei dico mentitum duo.
             Illum iusto laoreet his te. Lorem partiendo mel ex.
           </h5>
@@ -100,165 +98,91 @@
         </div>
       </div>
     </div>
-  </div>
   <!-- feature (green background) -->
-  <div class="jumbotron jumbotron-fluid feature" id="section3">
-    <div class="container-fluid my-5">
+    <div class="container-fluid py-5 feature" id="section3">
       <div class="row justify-content-between text-center">
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 my-auto text-center">
+        <div class="col-sm-12 my-auto text-center">
           <h3>Ürünler</h3>
-          <p class="my-4">
+          <p class="my-4 mx-4">
             Lorem ipsum dolor sit amet, id nec enim autem oblique, ei dico mentitum duo.Illum iusto laoreet his te.
             <br> Lorem partiendo mel ex. Ad vitae admodum voluptatum per.
           </p>
         </div>
       </div>
-      <!--Carousel Wrapper-->
-      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-        <!--Indicators-->
-        <ol class="carousel-indicators mt-5">
-          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-          <li data-target="#multi-item-example" data-slide-to="1"></li>
-        </ol>
-        <!--/.Indicators-->
-
-        <!--Slides-->
-        <div class="carousel-inner p-5 mb-2" role="listbox">
-
-          <!--First slide-->
-          <div class="carousel-item active justify-content-md-center">
-
-            <div class="row justify-content-md-center products">
-              <div class="col-xxl-3 mt-4 mr-5">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
-                </div>
-                <div class="card1Text">Mukavele</div>
-                  <div class="card-body">
-                    <h5>Sözleşme Dünyasının Yeni Aklı</h5>
-                    <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                      ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                      özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                      akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                      sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                      Sözleşme Yönetim Sistemidir.. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xxl-3 mb-5 mr-5">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/2.png" alt="" class="card-img-top">
-                </div>
-                  <div class="card2Text">Mahfuz</div>
-                  <div class="card-body">
-                    <h5>Güvenli, Akıllı ve Entegre Belge Yönetim Sistemi</h5>
-                    <p>Veri-tabanı özelliği yanında, ayrıca yapay zekaya dayalı arşivleme, tasnif, versiyonlama, belge
-                      paylaşma, belge ve dosya güvenlik sistemleri ve yetki opsiyonları içeren ve de diğer Mecellem
-                      hukuk teknolojisi ürünleri ile, entegre çalışabilen çok kapsayıcı bir belge yönetim sistemidir.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xxl-3 mt-4">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/3.png" alt="" class="card-img-top">
-                </div>
-                <div class="card3Text">Muhakemat</div>
-                  <div class="card-body">
-                    <h5>Davalara Akıllı Bakış Bütüncül Analiz</h5>
-                    <p>Şirketler ve avukatlarının tüm dava dosyalarına ilişkin tüm bilgi ve belgelerin tasnifini yapay
-                      zeka ile yapan ve davalara ilişkin tüm safahat kayıtlarını tek ekranda görebileceğiniz bu dava
-                      yönetim platformu, taraf olduğunuz tüm dava dosyalarına ilişkin olarak, yapay zeka ile, bütüncül
-                      veya arzu ettiğiniz kritere göre özelleştirilmiş analizler yapar; yaptığı analizleri dijital
-                      olarak görselleştirir ve otomasyonla özet yönetici raporları haline getirmektedir</p>
-                  </div>
-                </div>
-              </div>
+      <div id="splide" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><div class="card" >
+              <div class="middleImg">
+              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
             </div>
-
-          </div>
-          <!--/.First slide-->
-
-          <!--Second slide-->
-          <div class="carousel-item justify-content-md-center">
-
-            <div class="row justify-content-md-center products">
-              <div class="col-xxl-3 mt-4 mr-5">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
-                </div>
-                <div class="card1Text">Mukavele</div>
-                  <div class="card-body">
-                    <h5>Sözleşme Dünyasının Yeni Aklı</h5>
-                    <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                      ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                      özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                      akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                      sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                      Sözleşme Yönetim Sistemidir.. </p>
-                  </div>
-                </div>
+            <div class="card1Text">Mukavele</div>
+              <div class="card-body">
+                <h5>Sözleşme Dünyasının Yeni Aklı</h5>
+                <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
+                  ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
+                  özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
+                  akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
+                  sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
+                  Sözleşme Yönetim Sistemidir.. </p>
               </div>
-
-              <div class="col-xxl-3 mb-5 mr-5">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/2.png" alt="" class="card-img-top">
-                </div>
-                  <div class="card2Text">Mahfuz</div>
-                  <div class="card-body">
-                    <h5>Güvenli, Akıllı ve Entegre Belge Yönetim Sistemi</h5>
-                    <p>Veri-tabanı özelliği yanında, ayrıca yapay zekaya dayalı arşivleme, tasnif, versiyonlama, belge
-                      paylaşma, belge ve dosya güvenlik sistemleri ve yetki opsiyonları içeren ve de diğer Mecellem
-                      hukuk teknolojisi ürünleri ile, entegre çalışabilen çok kapsayıcı bir belge yönetim sistemidir.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xxl-3 mt-4">
-                <div class="card" style="width: 25rem;">
-                  <div class="middleImg">
-                  <img src="img/sliders/3.png" alt="" class="card-img-top">
-                </div>
-                <div class="card3Text">Muhakemat</div>
-                  <div class="card-body">
-                    <h5>Davalara Akıllı Bakış Bütüncül Analiz</h5>
-                    <p>Şirketler ve avukatlarının tüm dava dosyalarına ilişkin tüm bilgi ve belgelerin tasnifini yapay
-                      zeka ile yapan ve davalara ilişkin tüm safahat kayıtlarını tek ekranda görebileceğiniz bu dava
-                      yönetim platformu, taraf olduğunuz tüm dava dosyalarına ilişkin olarak, yapay zeka ile, bütüncül
-                      veya arzu ettiğiniz kritere göre özelleştirilmiş analizler yapar; yaptığı analizleri dijital
-                      olarak görselleştirir ve otomasyonla özet yönetici raporları haline getirmektedir</p>
-                  </div>
-                </div>
-              </div>
+            </div></li>
+            <li class="splide__slide"><div class="card" >
+              <div class="middleImg">
+              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
             </div>
+            <div class="card1Text">Mukavele</div>
+              <div class="card-body">
+                <h5>Sözleşme Dünyasının Yeni Aklı</h5>
+                <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
+                  ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
+                  özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
+                  akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
+                  sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
+                  Sözleşme Yönetim Sistemidir.. </p>
+              </div>
+            </div></li>
+            <li class="splide__slide"><div class="card" >
+              <div class="middleImg">
+              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
             </div>
-
-          </div>
-          <!--/.Second slide-->
-
-
-
+            <div class="card1Text">Mukavele</div>
+              <div class="card-body">
+                <h5>Sözleşme Dünyasının Yeni Aklı</h5>
+                <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
+                  ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
+                  özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
+                  akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
+                  sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
+                  Sözleşme Yönetim Sistemidir.. </p>
+              </div>
+            </div></li>
+            <li class="splide__slide"><div class="card" >
+              <div class="middleImg">
+              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
+            </div>
+            <div class="card1Text">Mukavele</div>
+              <div class="card-body">
+                <h5>Sözleşme Dünyasının Yeni Aklı</h5>
+                <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
+                  ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
+                  özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
+                  akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
+                  sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
+                  Sözleşme Yönetim Sistemidir.. </p>
+              </div>
+            </div></li>
+          </ul>
         </div>
-        <!--/.Slides-->
-
       </div>
-      <!--/.Carousel Wrapper-->
     </div>
-  </div>
+      <!--Carousel Wrapper-->
+      
+      <!--/.Carousel Wrapper-->
   <!-- contact -->
-  <div class="jumbotron jumbotron-fluid" id="contact">
-    <div class="container my-5">
-      <div class="row justify-content-between">
-        <div class="col-md-6">
+    <div class="container-fluid py-5" id="contact">
+      <div class="row justify-content-md-center ">
+        <div class="col-md-4 text-center text-md-left pt-4 contactus">
           <h3 class="font-weight-bold">İletişime Geçin</h3>
           <p class="my-4 font-weight-bold">
             Te iisque labitur eos, nec sale argumentum scribentur,
@@ -268,7 +192,7 @@
         <div class="col-md-6">
           <div class="row">
 
-            <div class="col-xs-12 ml-5 mr-5">
+            <div class="col-xs-12">
 
               <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
                 method="POST" role="form">
@@ -309,7 +233,6 @@
         </div>
       </div>
     </div>
-  </div>
 
   <!-- copyright -->
   <div class="container" id="footer">
@@ -320,30 +243,29 @@
         <div class="col-md-4 footer-brand animated fadeInLeft">
           <img src="img/M_icon.svg" width="80" alt="" class="d-inline-block align-middle mr-2 float-left">
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <section style="height:210px;"></section>
+          <section style="height:85px;"></section>
           © NM 2019 - Bilgi Yönetim Sistemleri
         </div>
         <div class="col-md-4 float-right">
           <label>iTower Bomonti Merkez Mah. Akar Cad.</label>
           <label>No:3 Kat:30 34381 Şişli/Istanbul Turkey</label>
           <label>+90 212 777 88 90</label>
+          <section style="height:45px;"></section>
+          <a href="mailto:info@newmind.ai">info@newmind.ai</a>
           </br>
-          </br>
-          <label>info@newmind.ai</label>
-          </br>
-          <label>newmind.ai</label> </br></br>
-          <section style="height:80px;"></section>
-          <a href="#">Gizlilik Politikası</a>
+          <a href="https://newmind.ai">newmind.ai</a>
         </div>
       </div>
+      <section style="height:45px;"></section>
     </footer>
   </div>
 
   <!-- AOS -->
   <script src="js/aos.js"></script>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script>
     AOS.init({
     });
