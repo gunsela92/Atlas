@@ -152,7 +152,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     trimSpace: false,
     gap: 205,
     padding: {
-      left : '5rem',
+      left : '8rem',
       right: '8rem',
     },
     throttle: 100,
@@ -214,7 +214,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       900: {
         perPage: 1,
         padding: {
-          left : '25%',
+          left : '5%',
           right: '0',
         },
         gap: 300,
@@ -223,7 +223,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       750: {
         perPage: 1,
         padding: {
-          left : '15%',
+          left : '5%',
           right: '0',
         },
         gap: 300,
@@ -232,7 +232,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       580: {
         perPage: 1,
         padding: {
-          left : '14%',
+          left : '3%',
           right: '0',
         },
         gap: 300,
@@ -241,7 +241,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       480: {
         perPage: 1,
         padding: {
-          left : '8.5%',
+          left : '1%',
           right: '0',
         },
         gap: 300,
@@ -250,7 +250,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
       450: {
         perPage: 1,
         padding: {
-          left : '0',
+          left : '1%',
           right: '0',
         },
         gap: 300,
