@@ -106,7 +106,7 @@ $(function () {
     function () {
       $el = $(this);
       leftPos = $el.position().left;
-      newWidth = $el.parent().width() - 85;
+      newWidth = $el.parent().width() - 80;
       $magicLine.stop().animate({
         left: leftPos,
         width: newWidth,
