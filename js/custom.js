@@ -96,7 +96,7 @@ $(function () {
   var $magicLine = $("#magic-line");
 
   $magicLine
-    .width($(".one").width() + 5)
+    .width($(".one").width() + 20)
     .css("left", $(".one").position().left)
     .css("margin-left", "41px")
     .data("origLeft", $magicLine.position().left)
@@ -106,7 +106,7 @@ $(function () {
     function () {
       $el = $(this);
       leftPos = $el.position().left;
-      newWidth = $el.parent().width() - 80;
+      newWidth = $el.parent().width() - 85;
       $magicLine.stop().animate({
         left: leftPos,
         width: newWidth,
