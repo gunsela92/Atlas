@@ -85,6 +85,37 @@ $(function () {
   }
 });
 
+
+$(function() {
+  $(".navbar-toggler").on('click',function() {
+    if ($(".collapse").css('display') == 'block') {
+      console.log("123");
+      $('#section1').attr('style', 'margin-top: 3rem !important');
+      $('#section1').css({
+        'transition' : '.5s'
+      })
+    } else if ($(".collapse").css('display') == 'none') {
+      console.log("1234")
+      $('#section1').attr('style', 'margin-top: 10rem !important');
+      $('#section1').css({
+        'transition' : '.5s'
+      })
+    }
+  })
+
+
+})
+
+$(function() {
+  if ($(window).width() < 990) {
+    $(".navbar-toggler-icon").removeClass("dark");
+    $(".navbar-toggler-icon").addClass("light");
+  } else {
+    $(".navbar-toggler-icon").removeClass("light");
+    $(".navbar-toggler-icon").addClass("dark");
+  }
+})
+
 $(function () {
   if ($(window).width() > 990) {
   var $el,
@@ -98,14 +129,14 @@ $(function () {
   $magicLine
     .width($(".one").width() + 5)
     .css("left", $(".one").position().left + 13)
-    .css("margin-left", "41px")
+    .css("margin-left", "28px")
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
   $(".navMenuItems li a").hover(
     function () {
       $el = $(this);
-      leftPos = $el.position().left;
+      leftPos = $el.position().left + 13;
       newWidth = $el.parent().width() - 85;
       $magicLine.stop().animate({
         left: leftPos,

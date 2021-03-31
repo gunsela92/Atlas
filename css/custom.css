@@ -168,6 +168,46 @@ button {
     url(../img/background/gorsel1.png);
 }
 
+.language {
+  border-radius: 80px !important;
+  line-height: 1.2rem !important;
+  width: 5rem !important;
+  background-color: transparent !important;
+  text-align: left !important;
+  border-color: white !important;
+}
+.dropdown-menu {
+  padding: 0 !important;
+  border-radius: 50px !important;
+  background-color: transparent !important;
+  min-width: 62px !important;
+  border: 1px solid white !important;
+  text-align: center !important;
+}
+.dropdown-item,
+.dropdown-menu {
+  background: transparent !important;
+  color: white !important;
+  width: 5rem;
+  text-align: left !important;
+}
+.dropdown-toggle:after {
+  margin-top: 0.4em;
+  float: right;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+
 @media (min-width: 576px) {
   header {
     position: relative;
@@ -177,53 +217,12 @@ button {
     margin-right: 35px;
     margin-left: 35px;
   }
-  .language {
-    border-radius: 80px !important;
-    line-height: 1.2rem !important;
-    width: 5rem !important;
-    background-color: transparent !important;
-    text-align: left !important;
-  }
-  .language {
-    border-color: white !important;
-  }
   .navbar-nav.ml-auto {
     height: 100% !important;
     line-height: 65px !important;
   }
   .collapse .navbar-collapse {
     height: 80px;
-  }
-  .dropdown-menu {
-    padding: 0 !important;
-    border-radius: 50px !important;
-    background-color: transparent !important;
-    min-width: 62px !important;
-    border: 1px solid white !important;
-    text-align: center !important;
-  }
-  .dropdown-toggle:after {
-    margin-top: 0.4em;
-    float: right;
-  }
-  .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-menu:hover {
-    display: block;
-  }
-
-  .dropdown > .dropdown-toggle:active {
-    pointer-events: none;
-  }
-
-  .dropdown-item,
-  .dropdown-menu {
-    background: transparent !important;
-    color: white !important;
-    width: 5rem;
-    text-align: left !important;
   }
   .dropdown-item {
     padding: 0.25rem 1rem !important;
@@ -574,6 +573,9 @@ a.btn-mod {
   }
   .nav-item.ml-2 {
     margin-left: 0 !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    max-height: 50px;
   }
 }
 
