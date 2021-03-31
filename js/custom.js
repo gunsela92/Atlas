@@ -96,8 +96,8 @@ $(function () {
   var $magicLine = $("#magic-line");
 
   $magicLine
-    .width($(".one").width() + 20)
-    .css("left", $(".one").position().left)
+    .width($(".one").width() + 5)
+    .css("left", $(".one").position().left + 13)
     .css("margin-left", "41px")
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
