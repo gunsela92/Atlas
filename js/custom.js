@@ -46,42 +46,6 @@ function nextBackground() {
   });
 }
 
-$(document).ready(function () {
-  // $(".switchInner").on("click", function (e) {
-  //   $(".switchInner").css("bottom", "25px");
-  // });
-
-  // Custom 
-  var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-    var stickyHeight = sticky.outerHeight();
-    var stickyTop = stickyWrapper.offset().top;
-    if (scrollElement.scrollTop() >= stickyTop){
-      stickyWrapper.height(stickyHeight);
-      sticky.addClass("is-sticky");
-    }
-    else{
-      sticky.removeClass("is-sticky");
-      stickyWrapper.height('auto');
-    }
-  };
-
-  // Find all data-toggle="sticky-onscroll" elements
-  $('[data-toggle="sticky-onscroll"]').each(function() {
-    var sticky = $(this);
-    var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-    sticky.before(stickyWrapper);
-    sticky.addClass('sticky');
-    
-    // Scroll & resize events
-    $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-      stickyToggle(sticky, stickyWrapper, $(this));
-    });
-    
-    // On page load
-    stickyToggle(sticky, stickyWrapper, $(window));
-  });
-});
-
 $(function() {     
   var scroll_start = 0;
   var startchange = $('#banner');
@@ -112,39 +76,15 @@ $(function() {
   });
    }
 
-$("#myCarousel").on("slide.bs.carousel", function(e) {
-  var $e = $(e.relatedTarget);
-  var idx = $e.index();
-  var itemsPerSlide = 3;
-  var totalItems = $(".carousel-item").length;
-
-  if (idx >= totalItems - (itemsPerSlide - 1)) {
-    var it = itemsPerSlide - (totalItems - idx);
-    for (var i = 0; i < it; i++) {
-      // append slides to end
-      if (e.direction == "left") {
-        $(".carousel-item")
-          .eq(i)
-          .appendTo(".carousel-inner");
-      } else {
-        $(".carousel-item")
-          .eq(0)
-          .appendTo($(this).find(".carousel-inner"));
-      }
-    }
-  }
-});
-
 });
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  console.log("123");
   new Splide('#splide', {
     type: 'loop',
     perPage: 3,
     focus: 'center',
     autoplay: true,
-    interval: 8000,
+    interval: 20000,
     flickMaxPages: 3,
     updateOnMove: true,
     pagination: true,

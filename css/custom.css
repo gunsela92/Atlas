@@ -180,11 +180,6 @@ button {
     font-size: 3.6rem;
   }
 }
-
-.navbar {
-  height: 80px;
-}
-
 .navbar .nav-link {
   color: white !important;
 }
@@ -443,40 +438,23 @@ button {
   overflow-y: hidden;
 }
 
-.hakkinda::before {    
-  background-image: url(../img/hakkında-backround-opy50.svg) !important;
-  background-size: cover;
+.hakkinda:hover {
   opacity: 0;
-}
-
-.hakkinda:hover:before {
-  opacity: 1;
 }
 
  .hakkinda {
   background-image: url(../img/hakkında-backround-opy50.svg) !important;
+  background-size: cover;
   background-repeat: no-repeat !important;
   background-position: bottom right !important;
   -webkit-transition: opacity 0.6s ease-in-out;
   transition: opacity 0.6s ease-in-out;
-}
-
-
-/* .hakkindaBg {
-  padding: 4rem 0rem 4rem 2rem;
-  float: right;
-  right: 0;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  height: 100vh;
-  max-width: unset;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
+  left: 0;
+  margin-top: -3rem;
 }
-
-.hakkindaBg:hover {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-} */
 
 #section3 {
   background: #212121;
@@ -633,17 +611,21 @@ a.btn-mod {
   .language {
     margin-left: 25px;
   }
+  .dropdown-menu {
+    margin-left: 25px !important;
+  }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 980px) {
   .switch,
   .switchInner {
     display: none;
   }
-  .products {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+  .hakkinda {
+    display: none;
+  }
+  .nav-item.ml-2 {
+    margin-left: 0 !important;
   }
 }
 
