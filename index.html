@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <!-- AOS -->
   <link rel="stylesheet" href="css/aos.css">
 </head>
@@ -36,10 +36,10 @@
           </button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto navMenuItems">
-              <li class="nav-item one"><a href="#section2" class="nav-link">MECELLEM NEDİR</a></li>
-              <li class="nav-item ml-2 two"><a href="#section3" class="nav-link">ÜRÜNLER</a></li>
-              <li class="nav-item ml-2 three"><a href="#contact" class="nav-link">İLETİŞİM</a></li>
-              <hr class="navmenuLine"/>
+              <li class="nav-item"><a href="#section2" class="nav-link one">MECELLEM NEDİR</a></li>
+              <li class="nav-item ml-2"><a href="#section3" class="nav-link two">ÜRÜNLER</a></li>
+              <li class="nav-item ml-2"><a href="#contact" class="nav-link three">İLETİŞİM</a></li>
+              <hr class="navmenuLine" />
             </ul>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle language" type="button" id="dropdownMenuButton"
@@ -56,13 +56,12 @@
     </header>
     <div class="container text-center text-md-left pt-5 mt-5 w-100" id="section1">
 
-      <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+      <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
         class="display-3 text-white font-weight-bold mt-5">
         Dijital ve Akıllı<br>
         Hukuk Dünyasının Yerli Kodu
       </h1>
-      <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
-        class="lead text-white headerComment">
+      <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" class="lead text-white headerComment">
         Yapay zekayı engin bir hukuk tecrübesi ile birleştiren Mecellem,
         <br> hukuk hizmetleri sektörünü bütünüyle değiştiriyor. Hukukçulara,
         <br> çok daha hızlı ve çok daha güvenli hizmet sunma imkanı sunarken,
@@ -81,10 +80,10 @@
   <div class="container-fluid py-5 d-flex mb-6" id="section2">
     <div class="hakkinda"></div>
     <div class="row text-center align-items-center w-100">
-      <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+      <div data-aos="fade-right" data-aos-duration="1000" class="col-md-6">
         <h1 class="font-weight-bold align-self-left pl-3 contactus">Mecellem Nedir</h1>
       </div>
-      <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
+      <div data-aos="fade-left" data-aos-duration="1000"
         class="col-md-4 w-100 float-right align-self-center text-md-left pl-5 aboutus">
         </br>
         <p class="w-100">NewMind BYS tarafından geliştirilen Mecellem; hukuk hizmetleri sektöründe,
@@ -107,7 +106,7 @@
   <!-- feature (green background) -->
   <div class="container-fluid py-5 feature" id="section3">
     <div class="row mt-5 justify-content-between text-center">
-      <div class="col-sm-12 my-auto text-center">
+      <div class="col-sm-12 my-auto text-center" data-aos="fade-up">
         <h3>Ürünler</h3>
         <p class="my-4 mx-4">
           Farklı yapay zeka tekniklerine dayalı olarak çok katmanlı olarak geliştirilen ürünler,
@@ -138,68 +137,78 @@
         <div class="swiper-slide">
           <div class="card">
             <div class="middleImg">
-              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
+              <img src="img/sliders/2.png" alt="" class="card-img-top img-fluid">
             </div>
-            <div class="card1Text">Mukavele</div>
+            <div class="card1Text">Muhakemat</div>
             <div class="card-body">
-              <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
-              <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                Sözleşme Yönetim Sistemidir.. </p>
+              <h5 class="productText">Davalara Akıllı Bakış Bütüncül Analiz</h5>
+              <p>Şirketler ve avukatlarının tüm dava dosyalarına ilişkin tüm bilgi ve belgelerin tasnifini yapay zeka
+                ile yapan ve davalara ilişkin tüm safahat kayıtlarını tek ekranda görebileceğiniz bu dava yönetim
+                platformu, taraf olduğunuz tüm dava dosyalarına ilişkin olarak, yapay zeka ile, bütüncül veya arzu
+                ettiğiniz kritere göre özelleştirilmiş analizler yapar; yaptığı analizleri dijital olarak görselleştirir
+                ve otomasyonla özet yönetici raporları haline getirmektedir. </p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card">
             <div class="middleImg">
-              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
+              <img src="img/sliders/3.png" alt="" class="card-img-top img-fluid">
             </div>
-            <div class="card1Text">Mukavele</div>
+            <div class="card1Text">Mahfuz</div>
             <div class="card-body">
-              <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
-              <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                Sözleşme Yönetim Sistemidir.. </p>
+              <h5 class="productText">Güvenli, Akıllı ve Entegre Belge Yönetim Sistemi</h5>
+              <p>Veri-tabanı özelliği yanında, ayrıca yapay zekaya dayalı arşivleme, tasnif, versiyonlama, belge
+                paylaşma, belge ve dosya güvenlik sistemleri ve yetki opsiyonları içeren ve de diğer Mecellem hukuk
+                teknolojisi ürünleri ile, entegre çalışabilen çok kapsayıcı bir belge yönetim sistemidir.</p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card">
             <div class="middleImg">
-              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
+              <img src="img/sliders/4.png" alt="" class="card-img-top img-fluid">
             </div>
-            <div class="card1Text">Mukavele</div>
+            <div class="card1Text">Muamelat</div>
             <div class="card-body">
-              <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
-              <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                Sözleşme Yönetim Sistemidir.. </p>
+              <h5 class="productText">Hukuki Proje Yönetimine Dijital Çözüm</h5>
+              <p>Proje-bazlı çalışmalarda hukuki proje yönetiminin en etkin şekilde yürütülmesini amaçlayan bu ürün ile,
+                projelere ilişkin tüm bilgi ve belgeler proje ihtiyacına göre yapay zeka ile tasnif edilirken, tüm proje
+                aşamalarının tek platform üzerinden takip edilip yönetilebildiği bütüncül bir Hukuki Proje Yönetimi
+                çözümü sunmaktadır.</p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card">
             <div class="middleImg">
-              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
+              <img src="img/sliders/5.png" alt="" class="card-img-top img-fluid">
             </div>
-            <div class="card1Text">Mukavele</div>
+            <div class="card1Text">Malumat</div>
             <div class="card-body">
-              <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
-              <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                Sözleşme Yönetim Sistemidir.. </p>
+              <h5 class="productText">Hızlı Bilgi, Doğru Karar</h5>
+              <p>100 milyondan fazla hukuki belgeye sahip ve sürekli güncellenen, belgelerin kaynak ve konularına göre
+                tasnif edildiği, doğal dil işleme ve sair yapay zeka teknikleri ile sadece kelime ve kavram değil, anlam
+                taraması da yapabilen kendine ait arama motoru ile
+                avukatlar için, araştırmalarını mümkün olan en hızlı ve en isabetli şekilde yapabilmelerine imkan
+                sağlayan eşsiz bir bilgi platformudur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="middleImg">
+              <img src="img/sliders/6.png" alt="" class="card-img-top img-fluid">
+            </div>
+            <div class="card1Text">Müellif</div>
+            <div class="card-body">
+              <h5 class="productText">Hızlı Düşünür Akıllı Yazar</h5>
+              <p>Yapay zeka ile çok detaylı tasnif edilmiş , ve çok kapsamlı bir hükümler ve belge taslaklar
+                kütüphanesine dayalı olarak, başta sözleşme, bilgi notu vb. hukuki belgelerin üretilmesinde veya
+                üretilmiş belgelerin arzu edilen şekilde tadil edilerek yeniden üretilmesini sağlayan bu ürün çok büyük
+                bir zaman tasarrufu yanında, doküman üretme kalitesini en üst seviyeye çıkarmaya yardımcı olmaktadır.
+              </p>
             </div>
           </div>
         </div>
@@ -299,15 +308,20 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <script src="js/custom.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
+      allowSlideNext: true,
       spaceBetween: 150,
       loop: true,
       slidesPerView: '3',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -335,10 +349,7 @@
           slidesPerView: 1,
           spaceBetween: 0
         }
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
+      }
     });
   </script>
   <script>

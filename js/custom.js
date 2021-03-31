@@ -21,9 +21,9 @@ $(function () {
         backgrounds[(current = ++current % backgrounds.length)],
     });
 
-    setTimeout(nextBackground, 20000);
+    setTimeout(nextBackground, 5000);
   }
-  setTimeout(nextBackground, 20000);
+  setTimeout(nextBackground, 5000);
   body.css({
     "background-image":
       "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
@@ -86,6 +86,7 @@ $(function () {
 });
 
 $(function () {
+  if ($(window).width() > 990) {
   var $el,
     leftPos,
     newWidth,
@@ -95,8 +96,9 @@ $(function () {
   var $magicLine = $("#magic-line");
 
   $magicLine
-    .width($(".one").width())
-    .css("left", $(".one a").position().left)
+    .width($(".one").width() + 5)
+    .css("left", $(".one").position().left)
+    .css("margin-left", "41px")
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
@@ -104,7 +106,7 @@ $(function () {
     function () {
       $el = $(this);
       leftPos = $el.position().left;
-      newWidth = $el.parent().width();
+      newWidth = $el.parent().width() - 85;
       $magicLine.stop().animate({
         left: leftPos,
         width: newWidth,
@@ -117,39 +119,47 @@ $(function () {
       });
     }
   );
+  } else {
+    $("#magic-line").remove();
+  }
 });
 
 $(window).resize(function () {
   $("#magic-line").remove();
-  var $el,
-    leftPos,
-    newWidth,
-    $mainNav = $(".navMenuItems");
-
-  $mainNav.append("<li id='magic-line'></li>");
-  var $magicLine = $("#magic-line");
-
-  $magicLine
-    .width($(".one").width())
-    .css("left", $(".one a").position().left)
-    .data("origLeft", $magicLine.position().left)
-    .data("origWidth", $magicLine.width());
-
-  $(".navMenuItems li a").hover(
-    function () {
-      $el = $(this);
-      leftPos = $el.position().left;
-      newWidth = $el.parent().width();
-      $magicLine.stop().animate({
-        left: leftPos,
-        width: newWidth,
-      });
-    },
-    function () {
-      $magicLine.stop().animate({
-        left: $magicLine.data("origLeft"),
-        width: $magicLine.data("origWidth"),
-      });
+  if ($(window).width() > 990) {
+    var $el,
+      leftPos,
+      newWidth,
+      $mainNav = $(".navMenuItems");
+  
+    $mainNav.append("<li id='magic-line'></li>");
+    var $magicLine = $("#magic-line");
+  
+    $magicLine
+      .width($(".one").width() + 5)
+      .css("left", $(".one").position().left)
+      .css("margin-left", "41px")
+      .data("origLeft", $magicLine.position().left)
+      .data("origWidth", $magicLine.width());
+  
+    $(".navMenuItems li a").hover(
+      function () {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width() - 85;
+        $magicLine.stop().animate({
+          left: leftPos,
+          width: newWidth,
+        });
+      },
+      function () {
+        $magicLine.stop().animate({
+          left: $magicLine.data("origLeft"),
+          width: $magicLine.data("origWidth"),
+        });
+      }
+    );
+    } else {
+      $("#magic-line").remove();
     }
-  );
 });
