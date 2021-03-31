@@ -117,6 +117,7 @@ $(function() {
 })
 
 $(function () {
+  $("#magic-line").remove();
   if ($(window).width() > 990) {
   var $el,
     leftPos,
@@ -127,9 +128,8 @@ $(function () {
   var $magicLine = $("#magic-line");
 
   $magicLine
-    .width($(".one").width() + 5)
-    .css("left", $(".one").position().left + 13)
-    .css("margin-left", "28px")
+    .width($(".one").width())
+    .css("left", $(".one").position().left)
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
