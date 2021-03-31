@@ -632,10 +632,9 @@ a.btn-mod {
 #magic-line { 
 	position: absolute;
 	left: 0; 
-	width: 100px;
+	width: 100px; 
 	height: 4px; 
 	background: #FD7F23;
-  margin-left: 55px;
 }
 
 .ie6 .navMenuItems li, .ie7 .navMenuItems li { 
