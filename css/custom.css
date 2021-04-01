@@ -167,49 +167,6 @@ button {
     url(../img/background/gorsel1.png);
 }
 
-.language {
-  border-radius: 80px !important;
-  line-height: 1.2rem !important;
-  width: 5rem !important;
-  background-color: transparent !important;
-  text-align: left !important;
-  border-color: white !important;
-}
-.dropdown-menu {
-  padding: 0 !important;
-  border-radius: 50px !important;
-  background-color: transparent !important;
-  min-width: 62px !important;
-  border: 1px solid white !important;
-  text-align: center !important;
-}
-.dropdown-item,
-.dropdown-menu {
-  background: transparent !important;
-  color: white !important;
-  width: 5rem;
-  text-align: left !important;
-}
-.dropdown-toggle:after {
-  margin-top: 0.4em;
-  float: right;
-}
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-.language:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu:hover {
-  display: block;
-}
-
-.dropdown > .dropdown-toggle:active {
-  pointer-events: none;
-}
-
 #main {
   height: 52rem;
 }
@@ -229,9 +186,6 @@ button {
   }
   .collapse .navbar-collapse {
     height: 80px;
-  }
-  .dropdown-item {
-    padding: 0.25rem 1rem !important;
   }
   .loginBtn {
     margin-left: 1rem;
@@ -553,22 +507,14 @@ a.btn-mod {
 }
 
 @media only screen and (max-width: 990px) and (min-width: 576px) {
-  .dropdown-menu,
-  .language {
+  .inline-choice {
     margin-left: 25px;
-  }
-  .dropdown-menu {
-    margin-left: 25px !important;
   }
 }
 
 @media only screen and (min-width: 989px) {
-  .dropdown-menu,
-  .language {
-    margin-left: 3.5rem;
-  }
-  .dropdown-menu {
-    margin-left: 3.5rem !important;
+  .inline-choice {
+    margin-left: 3rem !important;
   }
 }
 
@@ -596,7 +542,7 @@ a.btn-mod {
     width: 10rem;
     height: 3.5rem;
   }
-  .dropdown {
+  .inline-choice {
     margin-top: 1.6rem !important;
   }
 }
@@ -799,4 +745,101 @@ a.btn-mod {
   #whymecellem {
     background-size: 80rem;
   }
+}
+
+
+.inline-choice {
+	color: white;
+	display: inline-flex;
+	flex-direction: column;
+	width: 5rem;
+	text-align: center;
+}
+
+.inline-choice > span {
+  border: thin solid #fff;
+  border-radius: 1.15em;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1.5em;
+  outline: none;
+  padding: 0.1em 1.25em 0.1em 0.3em;
+  position: relative;
+  transition: border 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+  line-height: 2em;
+}
+.inline-choice.active > span {
+	background: transparent;
+	border-bottom: none !important;
+  border-radius: 1.15em 1.15em 0em 0em;
+  color: orange;
+	transition: all 0.3s ease-out;
+}
+
+.inline-choice > span:after {
+	border-width: 0.25em 0.25em 0 0.25em;
+  border-style: solid;
+  border-color: #fff transparent;
+  content: "";
+  height: 0;
+  margin-top: -3px;
+	position: absolute;
+  right: 0.35em;
+	top: 50%;
+	transition: border 0.2s;
+	width: 0; }
+.inline-choice.active > span:after {
+	border-color: #fff transparent;
+}
+.content-container.disabled .inline-choice > span::after {
+	border-color: #aaa transparent;
+}
+
+.inline-choice ul {
+  border: thin solid #222;
+  border-top: none;
+  border-bottom: none;
+	border-radius: 0 0 1.15em 1.15em;
+	left: 0;
+  list-style: none;
+	margin: 0;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	right: 0;
+  top: 100%;
+}
+.inline-choice.active ul {
+  border-bottom: thin solid #222;
+	box-shadow: 0 0.06em 0.06em rgba(0,0,0,.25);
+  max-height: 400px;
+	transition: max-height 0.3s ease-out;
+		border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.inline-choice li a {
+	background: transparent;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.25em 1.25em 0.25em 0.25em;
+}
+.inline-choice li a:hover {
+	color: orange;
+}
+
+.inline-choice:focus {
+	outline: thin dotted;
+	outline-offset: 2px;
+}
+
+.inline-choice.active {
+  top: 16px;
+  position: relative;
+
 }
