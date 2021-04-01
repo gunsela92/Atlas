@@ -584,6 +584,9 @@ a.btn-mod {
     width: 10rem;
     height: 3.5rem;
   }
+  .dropdown {
+    margin-top: 1.6rem !important;
+  }
 }
 
 .navbar .fixed-top .scrolled {
