@@ -23,11 +23,10 @@
   src: url("../fonts/ProximaNova-Light.otf") format("opentype");
 }
 
-
 @font-face {
-    font-family: Eboracum;
-    src: url('../fonts/Eboracum_tr.ttf') format('truetype');
-  }
+  font-family: Eboracum;
+  src: url("../fonts/Eboracum_tr.ttf") format("truetype");
+}
 
 html,
 body,
@@ -125,7 +124,6 @@ button {
   background: #00ffad;
 }
 
-
 /********** RWD **********/
 @media (max-width: 575px) {
   #main h1 {
@@ -143,7 +141,8 @@ button {
   background-size: cover !important;
   background-image: -webkit-gradient(
       linear,
-      right top, left top,
+      right top,
+      left top,
       from(rgba(0, 0, 0, 0.6)),
       color-stop(27%, transparent)
     ),
@@ -196,6 +195,10 @@ button {
   float: right;
 }
 .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.language:hover > .dropdown-menu {
   display: block;
 }
 
@@ -260,20 +263,20 @@ button {
     -webkit-transition: 0.6s;
     transition: 0.6s;
     -webkit-animation: MoveUpDown 1.7s linear infinite;
-            animation: MoveUpDown 1.7s linear infinite;
+    animation: MoveUpDown 1.7s linear infinite;
   }
 }
 
 @-webkit-keyframes MoveUpDown {
   from {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
   to {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
@@ -282,38 +285,38 @@ button {
 @keyframes MoveUpDown {
   from {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
   to {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 }
 
 .card {
-    z-index: 0;
-    min-height: 540px;
+  z-index: 0;
+  min-height: 540px;
 }
 
 .card img {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
 }
 
 .card1Text {
-    color: white;
-    position: absolute;
-    top: 24%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 35.2px;
-    font-size: 3.5rem;
-    font-family: Eboracum;
+  color: white;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 35.2px;
+  font-size: 3.5rem;
+  font-family: Eboracum;
 }
 .card2Text {
   color: white;
@@ -321,28 +324,38 @@ button {
   top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 35.2px;
   font-size: 2.2rem;
   font-family: Eboracum;
 }
 
 .card3Text {
-    color: white;
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 35.2px;
-    font-size: 2.2rem;
-    font-family: Eboracum;
+  color: white;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 35.2px;
+  font-size: 2.2rem;
+  font-family: Eboracum;
 }
 
 .middleImg {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(35%, transparent), to(#191919));
-    background-image: -webkit-linear-gradient(bottom, transparent 35%, #191919 100%);
-    background-image: linear-gradient(to top, transparent 35%, #191919 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(35%, transparent),
+    to(#191919)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    transparent 35%,
+    #191919 100%
+  );
+  background-image: linear-gradient(to top, transparent 35%, #191919 100%);
 }
 
 .display-3 {
@@ -366,7 +379,7 @@ button {
   background-image: url(../img/mecellemnedir.svg);
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: 70rem;
+  background-size: 90rem;
   height: auto;
   min-height: 60rem;
 }
@@ -376,19 +389,19 @@ button {
   background-image: url(../img/nedenmecellem.svg);
   background-position: left bottom;
   background-repeat: no-repeat;
-  background-size: 70rem;
+  background-size: 90rem;
   height: auto;
   min-height: 60rem;
 }
 
-.image-widescreen{
+.image-widescreen {
   border: 1px solid red;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 330px;
-  max-height: 330px; 
+  max-height: 330px;
   overflow-y: hidden;
 }
 
@@ -415,7 +428,7 @@ button {
 .card img {
   height: 250px;
   -webkit-transform: scaleX(2);
-          transform: scaleX(2);
+  transform: scaleX(2);
 }
 
 /* FORM */
@@ -550,7 +563,8 @@ a.btn-mod {
 }
 
 @media only screen and (min-width: 989px) {
-  .dropdown-menu, .language {
+  .dropdown-menu,
+  .language {
     margin-left: 3.5rem;
   }
   .dropdown-menu {
@@ -577,7 +591,8 @@ a.btn-mod {
   .display-3 {
     font-size: 3rem !important;
   }
-  .searchbtn, .loginBtn {
+  .searchbtn,
+  .loginBtn {
     width: 10rem;
     height: 3.5rem;
   }
@@ -614,7 +629,8 @@ a.btn-mod {
   margin: 0 auto;
 }
 
-.swiper-container-3d .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
   background-image: none !important;
 }
 
@@ -626,7 +642,8 @@ a.btn-mod {
   .display-3 {
     font-size: 2.5rem !important;
   }
-  .searchbtn, .loginBtn {
+  .searchbtn,
+  .loginBtn {
     width: 10rem;
     height: 3.5rem;
   }
@@ -640,7 +657,8 @@ a.btn-mod {
   .display-3 {
     font-size: 2rem !important;
   }
-  .searchbtn, .loginBtn {
+  .searchbtn,
+  .loginBtn {
     width: 10rem;
     height: 3.5rem;
   }
@@ -650,20 +668,21 @@ a.btn-mod {
 }
 
 .navMenuItems li {
-  display: inline-block;	
+  display: inline-block;
 }
 
-#magic-line { 
-	position: absolute;
-	left: 0;
+#magic-line {
+  position: absolute;
+  left: 0;
   top: 0;
-	width: 50px; 
-	height: 4px; 
-	background: #FD7F23;
+  width: 50px;
+  height: 4px;
+  background: #fd7f23;
 }
 
-.ie6 .navMenuItems li, .ie7 .navMenuItems li { 
-	display: inline; 
+.ie6 .navMenuItems li,
+.ie7 .navMenuItems li {
+  display: inline;
 }
 
 .productText {
@@ -685,7 +704,7 @@ a.btn-mod {
 
 .swiper-pagination-bullet-active {
   color: #fff;
-  background: #FD7F23 !important;
+  background: #fd7f23 !important;
 }
 
 .card-body p {
@@ -699,7 +718,9 @@ a.btn-mod {
   position: absolute;
   height: 52rem;
   width: 100%;
-  background: linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent 27%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 27%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 27%);
 }
 
 .section1 {
@@ -724,7 +745,8 @@ a.btn-mod {
   #main {
     height: 40rem;
   }
-  .switch, .switchInner {
+  .switch,
+  .switchInner {
     top: 33rem;
   }
 }
@@ -739,11 +761,11 @@ a.btn-mod {
   #main {
     height: 38rem;
   }
-  .switch, .switchInner {
+  .switch,
+  .switchInner {
     top: 28rem;
   }
 }
-
 
 @media only screen and (max-width: 1400px) and (min-width: 1000px) {
   .swiper-slide.swiper-slide-active {
@@ -751,26 +773,30 @@ a.btn-mod {
   }
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px)  {
-    .aboutus p {
-      margin-left: 5rem !important;
-    }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .aboutus p {
+    margin-left: 5rem !important;
+  }
 }
 
-.swiper-button-next, .swiper-button-prev {
-  color:white !important;
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
   opacity: 25%;
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
   opacity: 65%;
 }
 
 @media only screen and (max-width: 1200px) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
+  #section2,
+  #whymecellem {
+    background-size: 80rem;
+  }
 }
-
