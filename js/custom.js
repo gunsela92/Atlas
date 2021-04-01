@@ -1,49 +1,3 @@
-// var body = $("#main");
-// var backgrounds = [
-//   "url(./img/background/gorsel1.png)",
-//   "url(./img/background/gorsel2.jpg)",
-//   "url(./img/background/gorsel3.jpg)",
-//   "url(./img/background/gorsel4.jpg)",
-//   "url(./img/background/gorsel5.jpg)",
-//   "url(./img/background/gorsel6.jpg)",
-//   "url(./img/background/gorsel7.jpg)",
-//   "url(./img/background/gorsel8.jpg)",
-// ];
-// var current = 0;
-
-// $(function () {
-
-//   function nextBackground() {
-//     body.css({
-//       "background-image":
-//         "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-//         backgrounds[(current = ++current % backgrounds.length)],"transition": "all 2s ease"
-//     });
-
-//     setTimeout(nextBackground, 5000);
-//   }
-//   setTimeout(nextBackground, 5000);
-//   body.css({
-//     "background-image":
-//       "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-//       backgrounds[0],"transition": "all 2s ease"
-//   });
-// });
-
-// $(function () {
-//   body.click(function () {
-//     nextBackground();
-//   });
-// });
-
-// function nextBackground() {
-//   body.css({
-//     "background-image":
-//       "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-//       backgrounds[(current = ++current % backgrounds.length)],"transition": "all 2s ease"
-//   });
-// }
-
 $(function () {
   var scroll_start = 0;
   var startchange = $("#main");
@@ -88,15 +42,17 @@ $(function () {
 $(function() {
   $(".navbar-toggler").on('click',function() {
     if ($(".collapse").css('display') == 'block') {
-      console.log("123");
-      $('#section1').attr('style', 'margin-top: 3rem !important');
-      $('#section1').css({
+      $('.section1').css('margin-top', function (index, curValue) {
+        return parseInt(curValue, 10) - 120 + 'px';
+    });
+      $('.section1').css({
         'transition' : '.5s'
       })
     } else if ($(".collapse").css('display') == 'none') {
-      console.log("1234")
-      $('#section1').attr('style', 'margin-top: 10rem !important');
-      $('#section1').css({
+      $('.section1').css('margin-top', function (index, curValue) {
+        return parseInt(curValue, 10) + 120 + 'px';
+    });
+      $('.section1').css({
         'transition' : '.5s'
       })
     }

@@ -207,6 +207,9 @@ button {
   pointer-events: none;
 }
 
+#main {
+  height: 52rem;
+}
 
 @media (min-width: 576px) {
   header {
@@ -230,9 +233,6 @@ button {
   .loginBtn {
     margin-left: 1rem;
   }
-  #main {
-    height: 90vh;
-  }
   .mainButtons {
     margin-top: 3rem;
   }
@@ -245,7 +245,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     left: 50%;
-    bottom: 13vh;
+    top: 44rem;
   }
   .switchInner {
     background-image: url(../img/switchInner.svg);
@@ -256,7 +256,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     left: 50%;
-    bottom: 13vh;
+    top: 44rem;
     -webkit-transition: 0.6s;
     transition: 0.6s;
     -webkit-animation: MoveUpDown 1.7s linear infinite;
@@ -363,13 +363,22 @@ button {
 
 #section2 {
   background: #212121;
+  background-image: url(/img/mecellemnedir.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 70rem;
   height: auto;
-  min-height: 95vh;
+  min-height: 60rem;
 }
 
-#section2:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+#whymecellem {
+  background: #212121;
+  background-image: url(/img/nedenmecellem.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  height: auto;
+  min-height: 60rem;
 }
 
 .image-widescreen{
@@ -381,20 +390,6 @@ button {
   min-height: 330px;
   max-height: 330px; 
   overflow-y: hidden;
-}
-
- .hakkinda {
-  background-image: url(../img/hakkında-backround-opy50.svg) !important;
-  background-size: 65%;
-  background-repeat: no-repeat !important;
-  background-position: bottom right !important;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  margin-top: -3rem;
 }
 
 #section3 {
@@ -563,12 +558,14 @@ a.btn-mod {
   }
 }
 
+.aboutus p {
+  width: 75% !important;
+  margin-left: 3rem;
+}
+
 @media only screen and (max-width: 980px) {
   .switch,
   .switchInner {
-    display: none;
-  }
-  .hakkinda {
     display: none;
   }
   .nav-item.ml-2 {
@@ -700,7 +697,7 @@ a.btn-mod {
   left: 0;
   top: 0;
   position: absolute;
-  height: 90vh;
+  height: 52rem;
   width: 100%;
   background: linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%);
 }
@@ -713,22 +710,37 @@ a.btn-mod {
   margin-top: 3rem !important;
 }
 
-@media only screen and (max-height: 700px) {
+.section1 {
+  padding-top: 3rem !important;
+}
+
+@media only screen and (max-height: 820px) {
   .section1 {
     margin-top: 1rem !important;
   }
   .display-3 {
     font-size: 2.5rem !important;
   }
+  #main {
+    height: 40rem;
+  }
+  .switch, .switchInner {
+    top: 33rem;
+  }
 }
 
-@media only screen and (max-height: 620px) {
+@media only screen and (max-height: 700px) {
   .section1 {
     margin-top: 0rem !important;
   }
   .display-3 {
-    margin-top: 1rem !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+  }
+  #main {
+    height: 38rem;
+  }
+  .switch, .switchInner {
+    top: 28rem;
   }
 }
 
@@ -738,3 +750,27 @@ a.btn-mod {
     margin-left: 1rem;
   }
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  {
+    .aboutus p {
+      margin-left: 5rem !important;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color:white !important;
+  opacity: 25%;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 65%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+}
+
