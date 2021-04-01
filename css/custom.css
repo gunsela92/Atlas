@@ -36,6 +36,7 @@ html * {
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 img {
@@ -45,6 +46,7 @@ img {
 
 body {
   color: white !important;
+  width: 100%;
 }
 
 a,
@@ -333,7 +335,7 @@ button {
   background-image: url(../img/mecellemnedir.svg);
   background-position: right top;
   background-repeat: no-repeat;
-  background-size: 90rem;
+  background-size: auto;
   height: auto;
   min-height: 60rem;
 }
@@ -343,7 +345,7 @@ button {
   background-image: url(../img/nedenmecellem.svg);
   background-position: left bottom;
   background-repeat: no-repeat;
-  background-size: 90rem;
+  background-size: auto;
   height: auto;
   min-height: 60rem;
 }
@@ -740,10 +742,6 @@ a.btn-mod {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
-  }
-  #section2,
-  #whymecellem {
-    background-size: 80rem;
   }
 }
 
