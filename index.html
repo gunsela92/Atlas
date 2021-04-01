@@ -36,10 +36,9 @@
           </button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto navMenuItems">
-              <li class="nav-item"><a href="#section2" class="nav-link one">MECELLEM NEDİR</a></li>
-              <li class="nav-item ml-2"><a href="#section3" class="nav-link two">ÜRÜNLER</a></li>
-              <li class="nav-item ml-2"><a href="#contact" class="nav-link three">İLETİŞİM</a></li>
-              <hr class="navmenuLine" />
+              <li class="nav-item one"><a href="#section2" class="nav-link">MECELLEM NEDİR</a></li>
+              <li class="nav-item two"><a href="#section3" class="nav-link">ÜRÜNLER</a></li>
+              <li class="nav-item three"><a href="#contact" class="nav-link">İLETİŞİM</a></li>
             </ul>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle language" type="button" id="dropdownMenuButton"
@@ -54,7 +53,7 @@
         </div>
       </nav>
     </header>
-    <div class="container text-center text-md-left pt-5 mt-5 w-100 dasdas" id="section1">
+    <div class="container text-center text-md-left pt-5 mt-5 w-100" id="section1">
 
       <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
         class="display-3 text-white font-weight-bold mt-5">
@@ -343,7 +342,7 @@
         <div class="col-md-4 footer-brand animated fadeInLeft">
           <img src="img/M_icon.svg" width="80" alt="" class="d-inline-block align-middle mr-2 float-left">
           <p class="mt-1">Hukuki Bilgi ve Belge Yönetim Sistemleri & Akıllı Hukuk Hizmetleri Platformu</p>
-          <section style="height:85px;"></section>
+          <section style="height:75px;"></section>
           © NM 2019 - Bilgi Yönetim Sistemleri
         </div>
         <div class="col-md-4 float-right">
@@ -356,7 +355,7 @@
           <a href="https://newmind.ai">newmind.ai</a>
         </div>
       </div>
-      <section style="height:45px;"></section>
+      <section style="height:20px;"></section>
     </footer>
   </div>
 
@@ -368,6 +367,7 @@
     crossorigin="anonymous"></script>
   <script src="js/custom.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="js/jquery.bgswitcher.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
@@ -413,6 +413,16 @@
         }
       }
     });
+
+    $("#banner").bgswitcher({
+  images: ["img/background/gorsel1.png", "img/background/gorsel2.jpg", "img/background/gorsel3.jpg", "img/background/gorsel4.jpg", "img/background/gorsel5.jpg", "img/background/gorsel6.jpg", "img/background/gorsel7.jpg", "img/background/gorsel8.jpg"],
+  interval: 20000,
+  loop: true
+});
+
+$("#banner").on("click", function() {
+  $('#banner').bgswitcher("next");
+});
   </script>
   <script>
     AOS.init({

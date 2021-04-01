@@ -1,49 +1,48 @@
-var body = $("#banner");
-var backgrounds = [
-  "url(./img/background/gorsel1.png)",
-  "url(./img/background/gorsel2.jpg)",
-  "url(./img/background/gorsel3.jpg)",
-  "url(./img/background/gorsel4.jpg)",
-  "url(./img/background/gorsel5.jpg)",
-  "url(./img/background/gorsel6.jpg)",
-  "url(./img/background/gorsel7.jpg)",
-  "url(./img/background/gorsel8.jpg)",
-];
-var current = 0;
+// var body = $("#banner");
+// var backgrounds = [
+//   "url(./img/background/gorsel1.png)",
+//   "url(./img/background/gorsel2.jpg)",
+//   "url(./img/background/gorsel3.jpg)",
+//   "url(./img/background/gorsel4.jpg)",
+//   "url(./img/background/gorsel5.jpg)",
+//   "url(./img/background/gorsel6.jpg)",
+//   "url(./img/background/gorsel7.jpg)",
+//   "url(./img/background/gorsel8.jpg)",
+// ];
+// var current = 0;
 
-$(function () {
-  var body = $("#banner");
+// $(function () {
 
-  function nextBackground() {
-    body.css({
-      "background-image":
-        "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-        backgrounds[(current = ++current % backgrounds.length)],
-    });
+//   function nextBackground() {
+//     body.css({
+//       "background-image":
+//         "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
+//         backgrounds[(current = ++current % backgrounds.length)],"transition": "all 2s ease"
+//     });
 
-    setTimeout(nextBackground, 5000);
-  }
-  setTimeout(nextBackground, 5000);
-  body.css({
-    "background-image":
-      "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-      backgrounds[0],
-  });
-});
+//     setTimeout(nextBackground, 5000);
+//   }
+//   setTimeout(nextBackground, 5000);
+//   body.css({
+//     "background-image":
+//       "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
+//       backgrounds[0],"transition": "all 2s ease"
+//   });
+// });
 
-$(function () {
-  $("#banner").click(function () {
-    nextBackground();
-  });
-});
+// $(function () {
+//   body.click(function () {
+//     nextBackground();
+//   });
+// });
 
-function nextBackground() {
-  body.css({
-    "background-image":
-      "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
-      backgrounds[(current = ++current % backgrounds.length)],
-  });
-}
+// function nextBackground() {
+//   body.css({
+//     "background-image":
+//       "linear-gradient(to left, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 27%), linear-gradient(to right, rgba(0, 0, 0, .6), transparent 27%)," +
+//       backgrounds[(current = ++current % backgrounds.length)],"transition": "all 2s ease"
+//   });
+// }
 
 $(function () {
   var scroll_start = 0;
@@ -116,37 +115,36 @@ $(function() {
   }
 })
 
-$(function () {
+$(function() {
   if ($(window).width() > 990) {
   var $el,
     leftPos,
     newWidth,
-    $mainNav = $(".navMenuItems");
+    $mainNav = $(".navbar-nav");
 
   $mainNav.append("<li id='magic-line'></li>");
   var $magicLine = $("#magic-line");
 
   $magicLine
-    .width($(".one").width() + 5)
-    .css("left", $(".one").position().left + 13)
-    .css("margin-left", "28px")
+    .width($(".one").width())
+    .css("left", $(".one a").position().left)
     .data("origLeft", $magicLine.position().left)
     .data("origWidth", $magicLine.width());
 
-  $(".navMenuItems li a").hover(
-    function () {
+  $(".navbar-nav li a").hover(
+    function() {
       $el = $(this);
-      leftPos = $el.position().left + 13;
-      newWidth = $el.parent().width() - 85;
+      leftPos = $el.position().left;
+      newWidth = $el.parent().width();
       $magicLine.stop().animate({
         left: leftPos,
-        width: newWidth,
+        width: newWidth
       });
     },
-    function () {
+    function() {
       $magicLine.stop().animate({
         left: $magicLine.data("origLeft"),
-        width: $magicLine.data("origWidth"),
+        width: $magicLine.data("origWidth")
       });
     }
   );
@@ -155,38 +153,40 @@ $(function () {
   }
 });
 
+// Credit: https://css-tricks.com/jquery-magicline-navigation
+
+
 $(window).resize(function () {
   $("#magic-line").remove();
   if ($(window).width() > 990) {
     var $el,
       leftPos,
       newWidth,
-      $mainNav = $(".navMenuItems");
+      $mainNav = $(".navbar-nav");
   
     $mainNav.append("<li id='magic-line'></li>");
     var $magicLine = $("#magic-line");
   
     $magicLine
-      .width($(".one").width() + 5)
-      .css("left", $(".one").position().left)
-      .css("margin-left", "41px")
+      .width($(".one").width())
+      .css("left", $(".one a").position().left)
       .data("origLeft", $magicLine.position().left)
       .data("origWidth", $magicLine.width());
   
-    $(".navMenuItems li a").hover(
-      function () {
+    $(".navbar-nav li a").hover(
+      function() {
         $el = $(this);
         leftPos = $el.position().left;
-        newWidth = $el.parent().width() - 85;
+        newWidth = $el.parent().width();
         $magicLine.stop().animate({
           left: leftPos,
-          width: newWidth,
+          width: newWidth
         });
       },
-      function () {
+      function() {
         $magicLine.stop().animate({
           left: $magicLine.data("origLeft"),
-          width: $magicLine.data("origWidth"),
+          width: $magicLine.data("origWidth")
         });
       }
     );
