@@ -128,7 +128,7 @@ button {
 
 /********** RWD **********/
 @media (max-width: 575px) {
-  #banner h1 {
+  #main h1 {
     font-size: 3.6rem;
   }
 }
@@ -136,7 +136,7 @@ button {
   color: white !important;
 }
 
-#banner {
+#main {
   height: auto;
   -webkit-transition: background-image 1s linear;
   transition: background-image 1s linear;
@@ -230,7 +230,7 @@ button {
   .loginBtn {
     margin-left: 1rem;
   }
-  #banner {
+  #main {
     height: 90vh;
   }
   .mainButtons {

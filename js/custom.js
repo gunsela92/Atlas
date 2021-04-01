@@ -1,4 +1,4 @@
-// var body = $("#banner");
+// var body = $("#main");
 // var backgrounds = [
 //   "url(./img/background/gorsel1.png)",
 //   "url(./img/background/gorsel2.jpg)",
@@ -46,7 +46,7 @@
 
 $(function () {
   var scroll_start = 0;
-  var startchange = $("#banner");
+  var startchange = $("#main");
   var offset = startchange.offset();
   if (startchange.length) {
     $(document).scroll(function () {

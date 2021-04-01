@@ -19,13 +19,13 @@
 </head>
 
 <body>
-  <!-- banner -->
-  <div class="jumbotron" id="banner">
+  <!-- main -->
+  <div class="jumbotron" id="main">
     <header>
       <!-- NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-inverse">
         <div class="container" id="mainBar">
-          <a href="#banner" class="navbar-brand">
+          <a href="#main" class="navbar-brand">
             <!-- Logo Image -->
             <img id="mainLogo" src="img/MECELLEM-logo-white-01.svg" width="200" alt=""
               class="d-inline-block align-middle mr-2">
@@ -414,14 +414,14 @@
       }
     });
 
-    $("#banner").bgswitcher({
+    $("#main").bgswitcher({
   images: ["img/background/gorsel1.png", "img/background/gorsel2.jpg", "img/background/gorsel3.jpg", "img/background/gorsel4.jpg", "img/background/gorsel5.jpg", "img/background/gorsel6.jpg", "img/background/gorsel7.jpg", "img/background/gorsel8.jpg"],
   interval: 20000,
   loop: true
 });
 
-$("#banner").on("click", function() {
-  $('#banner').bgswitcher("next");
+$("#main").on("click", function() {
+  $('#main').bgswitcher("next");
 });
   </script>
   <script>
