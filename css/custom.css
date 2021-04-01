@@ -363,7 +363,7 @@ button {
 
 #section2 {
   background: #212121;
-  background-image: url(/img/mecellemnedir.svg);
+  background-image: url(../img/mecellemnedir.svg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 70rem;
@@ -373,7 +373,7 @@ button {
 
 #whymecellem {
   background: #212121;
-  background-image: url(/img/nedenmecellem.svg);
+  background-image: url(../img/nedenmecellem.svg);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 70rem;
