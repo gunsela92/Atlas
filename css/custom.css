@@ -95,19 +95,6 @@ button {
   background: white !important;
 }
 
-.atlas-cta {
-  border-radius: 10px !important;
-  padding: 12px 30px !important;
-  font-weight: 700;
-  -webkit-transition: 0.3s ease-in-out !important;
-  transition: 0.3s ease-in-out !important;
-}
-
-.login {
-  border: 1px solid white;
-  background: white;
-}
-
 /********** feature (skew background) **********/
 .feature {
   height: auto;
@@ -623,11 +610,6 @@ a.btn-mod {
   background: #fd7f23;
 }
 
-.ie6 .navMenuItems li,
-.ie7 .navMenuItems li {
-  display: inline;
-}
-
 .productText {
   font-weight: bold;
   color: rgb(107, 107, 107);
@@ -825,6 +807,6 @@ a.btn-mod {
 }
 
 .inline-choice.active {
-  top: 16px;
+  top: 14px;
   position: relative;
 }

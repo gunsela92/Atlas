@@ -151,6 +151,20 @@ $(window).resize(function () {
 $(function() {
   $( ".inline-choice" ).hover(function() {
     $('.inline-choice').addClass('active');
+    if ($(".navbar-toggler-icon").hasClass("light")) {
+      if (!$(".navbar-toggler-icon").hasClass("light")) {
+        //GRI
+          $('.inline-choice > span').attr("style", "color: #5C605F; border: thin solid #5C605F;")
+          $('.inline-choice.active > span').attr("style", "border: thin solid #5C605F;")
+          $('.inline-choice > span::after').attr('style', "border-color: #000 transparent")
+          $('.inline-choice.active ul').attr("style", "border-left: 1px solid #5C605F; border-right: 1px solid #5C605F; border-bottom: 1px solid #5C605F");
+          $('.inline-choice li a').attr("style", "color: #5C605F");
+      } else if ($(".navbar-toggler-icon").hasClass("dark")) {
+        $('.inline-choice li a').attr("style", "color: #fff");
+        $('.inline-choice > span').attr("style", "color: white; border: thin solid #fff");
+        $('.inline-choice.active ul').attr("style", "border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff");
+      }
+    }
     $('.inline-choice.active ul').attr("style", "border-bottom: 1px solid #fff");
   }, function(e) {
     if(!$(e.target).parents('.inline-choice .active').length)
