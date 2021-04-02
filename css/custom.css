@@ -783,7 +783,7 @@ a.btn-mod {
   height: 0;
   margin-top: -3px;
 	position: absolute;
-  right: 0.35em;
+  right: 0.85em;
 	top: 50%;
 	transition: border 0.2s;
 	width: 0; }
