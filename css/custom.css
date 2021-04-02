@@ -470,13 +470,8 @@ a.btn-mod {
     padding: 6px 16px;
     font-size: 11px;
   }
-
   .form-title {
     font-size: 20px;
-  }
-  #mainBar {
-    padding-right: 35px;
-    padding-left: 35px;
   }
 }
 
@@ -516,7 +511,7 @@ a.btn-mod {
 
 @media only screen and (min-width: 989px) {
   .inline-choice {
-    margin-left: 3rem !important;
+    margin-left: 2rem !important;
   }
 }
 
@@ -675,10 +670,6 @@ a.btn-mod {
   height: 90vh;
 }
 
-.display-3 {
-  margin-top: 3rem !important;
-}
-
 .section1 {
   padding-top: 3rem !important;
 }
@@ -705,6 +696,7 @@ a.btn-mod {
   }
   .display-3 {
     font-size: 1.5rem !important;
+    margin-top: 0rem !important;
   }
   #main {
     height: 38rem;
@@ -835,5 +827,4 @@ a.btn-mod {
 .inline-choice.active {
   top: 16px;
   position: relative;
-
 }

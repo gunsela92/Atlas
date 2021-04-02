@@ -32,27 +32,34 @@ $(function () {
 });
 
 
-$(function() {
-  $(".navbar-toggler").on('click',function() {
-    if ($(".collapse").css('display') == 'block') {
-      $('.section1').css('margin-top', function (index, curValue) {
-        return parseInt(curValue, 10) - 120 + 'px';
-    });
-      $('.section1').css({
-        'transition' : '.5s'
-      })
-    } else if ($(".collapse").css('display') == 'none') {
-      $('.section1').css('margin-top', function (index, curValue) {
-        return parseInt(curValue, 10) + 120 + 'px';
-    });
-      $('.section1').css({
-        'transition' : '.5s'
-      })
-    }
-  })
+// $(function() {
+//   $(".navbar-toggler").on('click',function() {
+//     if ($(".collapse").css('display') == 'block') {
+//       $('.section1').css('margin-top', function (index, curValue) {
+//         return parseInt(curValue, 10) - 120 + 'px';
+//     });
+//       $('.section1').css({
+//         'transition' : '.5s'
+//       })
+//     } else if ($(".collapse").css('display') == 'none') {
+//       $('.section1').css('margin-top', function (index, curValue) {
+//         return parseInt(curValue, 10) + 120 + 'px';
+//     });
+//       $('.section1').css({
+//         'transition' : '.5s'
+//       })
+//     }
+//   })
+// })
 
-
-})
+$(document).scroll(function(e){
+  var scrollTop = $(document).scrollTop();
+  if(scrollTop > 0){
+      $('.navbar').removeClass('static-top').addClass('fixed-top');
+  } else {
+      $('.navbar').removeClass('fixed-top').addClass('static-top');
+  }
+});
 
 $(function() {
   if ($(window).width() < 990) {
