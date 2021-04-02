@@ -731,7 +731,6 @@ a.btn-mod {
 .inline-choice > span {
   border: thin solid #fff;
   border-radius: 1.15em;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   min-height: 1.5em;
@@ -809,4 +808,12 @@ a.btn-mod {
 .inline-choice.active {
   top: 14px;
   position: relative;
+}
+
+.darkLanguage {
+  color: #5C605F;
+}
+
+.lightLanguage {
+  color: white;
 }
