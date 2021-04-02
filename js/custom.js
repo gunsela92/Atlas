@@ -11,7 +11,7 @@ $(function () {
         $("#mainLogo").attr("src", "./img/MECELLEM-logo.svg");
         $(".navbar .nav-link").attr("style", "color: gray !important");
         $('.inline-choice > span').attr("style", "color: #5C605F; border: thin solid #5C605F;")
-        $('.inline-choice.active > span').attr("style", "border: thin solid #5C605F; border-bottom: none;")
+        $('.inline-choice.active > span').attr("style", "border: thin solid #5C605F;")
         $('.inline-choice > span::after').attr('style', "border-color: #000 transparent")
         $('.inline-choice.active ul').attr("style", "border-left: 1px solid #5C605F; border-right: 1px solid #5C605F; border-bottom: 1px solid #5C605F");
         $('.inline-choice li a').attr("style", "color: #5C605F");
@@ -23,7 +23,6 @@ $(function () {
         $(".navbar .nav-link").attr("style", "color: white !important");
         $('.inline-choice li a').attr("style", "color: #fff");
         $('.inline-choice > span').attr("style", "color: white; border: thin solid #fff");
-        $('.inline-choice.active > span').attr("style", "border-bottom: none;")
         $('.inline-choice.active ul').attr("style", "border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff");
         $(".navbar-toggler-icon").removeClass("dark");
         $(".navbar-toggler-icon").addClass("light");
@@ -146,15 +145,13 @@ $(window).resize(function () {
 });
 
 $(function() {
-  $('.inline-choice').on('click',function() {
-    $('.inline-choice').addClass('active');
-  })
-
   $( ".inline-choice" ).hover(function() {
     $('.inline-choice').addClass('active');
+    $('.inline-choice.active ul').attr("style", "border-bottom: 1px solid #fff");
   }, function(e) {
     if(!$(e.target).parents('.inline-choice .active').length)
        $('.inline-choice').removeClass('active');
+       $('.inline-choice ul').attr("style", "border-bottom: none;")
   });
 })
 
@@ -164,5 +161,9 @@ $(document).mouseup(function(e)
     if (!container.is(e.target) && container.has(e.target).length === 0) 
     {
       $('.inline-choice').removeClass('active');
+      $('.inline-choice ul').attr("style", "border-bottom: none;")
+    } else {
+      $('.inline-choice').addClass('active');
+      $('.inline-choice.active ul').attr("style", "border-bottom: 1px solid #fff");
     }
 });
