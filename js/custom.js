@@ -65,9 +65,6 @@ $(function() {
   if ($(window).width() < 990) {
     $(".navbar-toggler-icon").removeClass("dark");
     $(".navbar-toggler-icon").addClass("light");
-  } else {
-    $(".navbar-toggler-icon").removeClass("light");
-    $(".navbar-toggler-icon").addClass("dark");
   }
 })
 
