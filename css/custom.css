@@ -773,7 +773,6 @@ a.btn-mod {
 	border-bottom: none !important;
   border-radius: 1.15em 1.15em 0em 0em;
   color: orange;
-	transition: all 0.3s ease-out;
 }
 
 .inline-choice > span:after {
@@ -812,7 +811,6 @@ a.btn-mod {
   border-bottom: thin solid #222;
 	box-shadow: 0 0.06em 0.06em rgba(0,0,0,.25);
   max-height: 400px;
-	transition: max-height 0.3s ease-out;
   border-left: 1px solid white;
 	border-bottom: 1px solid white;
 	border-right: 1px solid white;
