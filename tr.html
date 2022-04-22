@@ -2,467 +2,472 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Mecellem</title>
-  <meta name="description" content="Mecellem">
-  <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-  <!-- custom.css -->
-  <link rel="stylesheet" href="css/custom.css">
-  <!-- bootstrap.min.css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <!-- AOS -->
-  <link rel="stylesheet" href="css/aos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, shrink-to-fit=no">
+    <title>Mecellem</title>
+    <meta name="description" content="Mecellem">
+    <link rel="icon" href="/assets/images/img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <script>
+        function lang(l){
+            document.cookie = 'lang=' + l;
+            window.location = '';
+        }
+        window.onload = function () {
+            window.history.pushState({},'','/')
+        }
+    </script>
 </head>
 
 <body>
-  <!-- main -->
-  <div class="jumbotron" id="main">
+<!-- main -->
+<div class="jumbotron position-relative" id="main">
     <div class="gradient"></div>
     <header>
-      <!-- NAVBAR-->
-      <nav class="navbar navbar-expand-xl navbar-light static-top">
-        <div class="container" id="mainBar">
-          <a href="#main" class="navbar-brand">
-            <!-- Logo Image -->
-            <img id="mainLogo" src="img/MECELLEM-logo-white-01.svg" width="200" alt=""
-              class="d-inline-block align-middle">
-          </a>
+        <!-- NAVBAR-->
+        <nav class="navbar navbar-expand-xl navbar-light static-top">
+            <div class="container" id="mainBar">
+                <a href="#main" class="navbar-brand">
+                    <!-- Logo Image -->
+                    <img id="mainLogo" src="/assets/images/img/MECELLEM-logo-white-01.svg" width="200" alt=""
+                         class="d-inline-block align-middle">
+                </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon light"></span>
-          </button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto navMenuItems">
-              <li class="nav-item one"><a href="#section2" class="nav-link">MECELLEM NEDİR</a></li>
-              <li class="nav-item two"><a href="#whymecellem" class="nav-link">NEDEN MECELLEM</a></li>
-              <li class="nav-item three"><a href="#section3" class="nav-link">ÜRÜNLER</a></li>
-            </ul>
-            <div class="inline-choice">
-              <span>TR</span>
-              <ul>
-                <li><a href="index.html">EN</a></li>
-              </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon light"></span>
+                </button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto navMenuItems">
+                        <li class="nav-item one"><a href="#section2" class="nav-link">MECELLEM NEDİR</a></li>
+                        <li class="nav-item two"><a href="#whymecellem" class="nav-link">NEDEN MECELLEM</a></li>
+                        <li class="nav-item three"><a href="#section3" class="nav-link">ÜRÜNLER</a></li>
+                    </ul>
+                    <div class="inline-choice">
+                        <span>TR</span>
+                        <ul>
+                            <li><a href="javascript:lang('en')">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
-    <div class="container text-center text-md-left pt-5 w-100 section1">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
-            class="display-3 text-white font-weight-bold">
-            Dijital ve Akıllı<br>
-            Hukuk Dünyasının Yerli Kodu
-          </h1>
-          <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" class="lead text-white headerComment">
-            Yapay zekayı engin bir hukuk tecrübesi ile birleştiren Mecellem, hukuk hizmetleri sektörünü bütünüyle
-            değiştiriyor. Hukukçulara,
-            çok daha hızlı ve çok daha güvenli hizmet sunma imkanı sunarken,
-            hukukun girift dünyasını tüm paylaşlar için yalınlaştırarak,
-            etkin şekilde yönetmelerini sağlıyor.
-          </p>
-          <div class="mainButtons">
-            <a href="#section2" class="btn btn-outline-secondary btn-lg mt-4 searchbtn">KEŞFET</a>
-            <a class="btn btn-outline-secondary btn-lg mt-4 loginBtn">GİRİŞ</a>
-          </div>
-          <div class="container">
-            <a href="#section2" class="switch"></a>
-            <a href="#section2" class="switchInner"></a>
-          </div>
+    <div style="padding-left: 30px;" class="container text-center pt-5 text-md-left w-100 section1 section-plus">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 style="font-size: 32px !important;" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000"
+                    class="display-3 text-white font-weight-bold mt-5 mt-md-0 text-left">
+                    Özgün, Yenilikçi ve Dönüştürücü.<br>
+                    Dijital hukuk dünyasının en akıllı Kodu.
+                </h1>
+                <p style="font-size: 14px !important"  data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" class="lead text-white headerComment text-justify mt-0 mt-md-3">
+                    Mecellem, hukuku yapay zeka, blok zinciri ve nesnelerin interneti ile güçlendirerek, <b>hukuk hizmetleri</b> alanındaki uygulamaları bütünüyle dönüştürüyor.
+                    Sürekli büyüten ancak halihazırda dayandığı 256 bin birim zeka ve 3 milyardan fazla veri jetonuna dayalı olan bu platformla  hukuk hizmetleri , artık karşılaştırılamaz şekilde,
+                    <b>daha hızlı, daha sağlam ve daha akıllı</b> hale gelirken, hukuk dünyasının girift ve muğlak dünyasını <b>daha yalın</b> ve <b>yönetmesi daha kolay</b> hale getiriyor.
+                </p>
+                <div class="mainButtons text-left">
+                    <a class="btn btn-outline-secondary btn-lg mt-4 ml-0 loginBtn" href="/?action=forcelogin">GİRİŞ</a>
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- MECELLEM NEDIR -->
-  <div class="container-fluid py-5 d-flex mb-6" id="section2">
-    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center">
-      <div data-aos="fade-right" data-aos-duration="1000"
-      class="col-md-4">
-      <h1 class="font-weight-bold align-self-left contactabout">Mecellem Nedir</h1>
-      </p>
+    <div class="container full-container">
+        <a href="#section2" class="switch"></a>
+        <a href="#section2" class="switchInner"></a>
     </div>
-      <div data-aos="fade-left" data-aos-duration="1000" class="col-md-4">
-        <p class="align-self-left text-md-left">
-          NewMind BYS tarafından geliştirilen Mecellem; hukuk hizmetleri sektöründe, <br>
-          hem hizmet sağlayıcı hem de alıcılarına yönelik 16 farklı ihtiyaç kategorisine <br>
-          cevap vermek üzere, doğal dil işleme, makine öğrenmesi, blokzinciri ve benzeri <br>
-          yapay zeka teknolojilerine dayalı olarak tasarlanan 16 farklı ürün ve çözümü <br>
-          bünyesinde barındıran<strong> entegre ve akıllı hukuk bilgi yönetimi ve hukuk hizmetleri platformudur.</strong>
-          <br><br>Mecellem, yapay Zekaya dayalı olarak hukuk-teknolojilerinin sağlayabildiği tüm
-          özellikleri tek platformda ve de Türkçe dil işleme özelliğine sahip olarak sunabilen
-          ve bu bağlamda kendi eko-sistemini inşa etmiş muadili olmayan bir hizmet sağlayıcı
-          platformudur.
-        </p>
-      </div>
+</div>
+<!-- MECELLEM NEDIR -->
+<div class="container-fluid py-5 d-flex mb-6" id="section2">
+    <div class="w-100 row text-center mt-5 align-items-center justify-content-md-center align-self-center mx-auto" style="overflow-x: hidden">
+        <div data-aos="fade-right" data-aos-duration="1000"
+             class="col-md-4">
+            <h1 class="font-weight-bold align-self-left contactabout">Mecellem Nedir</h1>
+            </p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="col-md-4">
+            <p class="align-self-left text-md-left" style="text-align: justify !important;" >
+                10 yıldır hukuk teknolojileri alanında uzmanlaşan NewMind AŞ, tarafından geliştirilen bir
+                Mecellem; hukuk hizmetleri sektöründe, hem hizmet sağlayıcı hem de alıcılarına yönelik
+                ve tamamen reel sektör deneyimlerinden çıkarılan 16 farklı ihtiyaç kategorisine cevap
+                vermek üzere,  doğal dil işleme, makine öğrenmesi gibi yapay zeka teknikleri, blok zinciri
+                ve nesnelerin interneti gibi teknolojilere dayalı olarak tasarlanan 16 farklı ürün ve çözümü
+                bünyesinde barındıran <b>akıllı ve entegre hukuk teknolojleri çözümleri ve hukuki bilgi ve
+                    risk yönetimi platformudur.</b>
+                </br></br>
+                Türkçe dil işleme özelliğine dayalı da eğitildiği için Türkçe dilinde hizmet verebilmesi ve
+                dünyadaki en entegre hukuk-teknolojileri ekosistemini inşa ederek benzersiz bir şekilde
+                öne çıkan Mecellem aynı zamanda,  halihazırda 256 bin birim akıl ve 3 milyar birim
+                verinin tek platform arka planında aynı anda çalıştığı <b>dünyanın en akıllı hukuki bilgi ve
+                    risk yönetim platformudur.</b>
+
+            </p>
+        </div>
     </div>
-  </div>
-  <!-- NEDEN MECELLEM -->
-  <div class="container-fluid py-5 d-flex mb-6" id="whymecellem">
-    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center">
-      <div data-aos="fade-left" data-aos-duration="1000"
-      class="col-md-4 order-md-last order-lg-last order-sm-first order-md-last order-first">
-      <h1 class="font-weight-bold align-self-right contactabout">Neden Mecellem</h1>
-      </p>
+</div>
+<!-- NEDEN MECELLEM -->
+<div class="container-fluid py-5 d-flex mb-6" id="whymecellem">
+    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center w-100" style="overflow-x: hidden">
+        <div data-aos="fade-left" data-aos-duration="1000"
+             class="col-md-4 order-md-last order-lg-last order-sm-first order-md-last order-first">
+            <h1 class="font-weight-bold align-self-right contactabout">Neden Mecellem</h1>
+            </p>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="col-md-4 order-last order-lg-first order-md-first order-sm-last whymecellem">
+            <p class="text-md-left" style="text-align: justify !important;" >
+                Türk hukukçuların,  resepsiyonist akımlara karşı 1868 yılında medeni hukuku,
+                modern hukuk dili ve teknikleri ile  harmanlayarak yazdıkları ilk yerli,
+                bütüncül ve özgün <b>Türk hukuk kodeksinin</b> adı Mecelle idi.
+                <br><br>
+                Mecellem ürünleri de,  Türk hukuk tarihi açısından Mecelle’nin yansıttığı
+                <b>‘özgün, yenilikçi ve standart değiştirten’</b> vizyonunun, bugün hukuk
+                teknolojileri alanında hayata geçmiş hali olup, ilk özgün, yenilikçi ve entegre
+                <b>dijital ve akıllı hukuk hizmetleri platformu kodeksi’</b> olma vasfını temsil etmektedir.
+                <br>
+                Bu vizyon devamlılığını temsilen, bu ürüne <b>Mecellem</b> adı verilmiştir.
+            </p>
+        </div>
     </div>
-      <div data-aos="fade-right" data-aos-duration="1000" class="col-md-4 order-last order-lg-first order-md-first order-sm-last whymecellem">
-        <p class="text-md-left">
-          Türk hukukçuların, resepsiyonist akımlara karşı 1868 yılında medeni hukuku, modern hukuk dili ve teknikleri
-          ile harmanlayarak yazdıkları ilk yerli, bütüncül ve özgün Türk hukuk kodeksini adı Mecelle idi.
-          <br><br>
-          Mecellem ürünleri de, Türk hukuk tarihi açısından Mecelle’nin yansıttığı ‘yerli, yenilikçi ve standart
-          değiştirten’ vizyonunun, bugün hukuk teknolojileri alanında hayata geçmiş hali olup, ilk yerli, entegre ve
-          kendine özgü dijital ve akıllı hukuk hizmetleri platformu kodeksi’ olma vasfını temsil etmektedir.
-          <br>
-          Bu vizyon devamlılığını temsilen, bu ürüne Mecellem adı verilmiştir. 
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- ÜRÜNLER -->
-  <div class="container-fluid py-5 pl-0 feature" id="section3">
+</div>
+<!-- ÜRÜNLER -->
+<div class="container-fluid py-5 pl-0 feature" id="section3">
     <div class="row mt-5 justify-content-center text-center">
-      <div class="col-sm-8 w-100 my-auto text-center pt-5" data-aos="fade-up">
-        <h3>Ürünler</h3>
-        <p class="my-4 mx-4">
-          Farklı yapay zeka tekniklerine dayalı olarak çok katmanlı olarak geliştirilen ürünler,
-          tamamıyla reel sektör deneyim ve ihtiyaçları temel alınarak tasarlanmış olup,
-          hem birbirleriyle konuşabilen hem de birbirlerinden bağımsız olarak çalışabilmektedir.
-        </p>
-      </div>
-      <div class="col-sm-12 w-100 p-0 justify-content-center">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/1.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Mukavele</div>
-            <div class="card-body">
-              <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
-              <p>Bir şirketin ve avukatlık ofisinin yönettiği tüm sözleşme dünyasının tek noktadan yönetildiği bu
-                ürün, taraf olduğunuz sözleşmelerin bütününe ilişkin yapay zeka aracılığı ile bütüncül yönetici
-                özeti niteliğinde analizler yaparken, diğer yandan da sözleşmelerle ilgili tüm bilgi ve belgelerin
-                akıllı tasnifini, ve de tekil bir sözleşmenin tasnif edilmiş hükümler analizini de yaparak, ilgili
-                sözleşmenin ‘durum tespit raporunu (due diligence) otomatik olarak çıkarma yeteneğini kazanmış bir
-                Sözleşme Yönetim Sistemidir.. </p>
-            </div>
-          </div>
+        <div class="col-sm-8 w-100 my-auto text-center pt-5" data-aos="fade-up">
+            <h1 class="font-weight-bold contactabout" >Ürünler</h1>
+            <p class="my-4 mx-4">
+                Farklı yapay zeka tekniklerine dayalı çok katmanlı ama kullanım kolaylığı açısından en üst
+                seviyede geliştirilen ürünler, tamamıyla gerçek iş deneyim ve ihtiyaçları temel alınarak ve
+                de bütüncül ve hem birbirleriyle konuşabilen şekilde tasarlanmıştır. Ancak ürünler
+                platform üzerinde bütünlüklü çalıştıkları gibi, her bir ürün fonksiyon itibariyle müstakil
+                olarak da çalışabilmektedir.
+                <br><br>
+                Henüz geliştirilemeyen kısmı kullanım alışkanlığı yaratma potansiyeli olup, bir süre
+                kullandıktan sonra eksikliğinin kişiler için sorun oluşturmasıdır.
+            </p>
         </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/2.png" alt="" class="card-img-top img-fluid">
+        <div class="col-sm-12 w-100 p-0 justify-content-center">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/1.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Mukavele</div>
+                            <div class="card-body">
+                                <h5 class="productText">Sözleşme Dünyasının Yeni Aklı</h5>
+                                <p>Bir Sözleşme Yönetim ve Durum Tespit Analiz (due diligence) sistemi olan bu ürün, bir
+                                    şirketin ve avukatlık ofisinin yönettiği tüm sözleşmelerin ve sözleşmelere ilintili görevlerin
+                                    yapay zeka ile tek noktadan en etkin şekilde yönetilmesini sağlar. Ayrıca tüm sözleşmelere
+                                    ilişkin otomatik olarak bütüncül ya da farklı kriterlere göre özelleştirilmiş analizlerini
+                                    yaparken, sözleşmelere konu tüm ilgili bilgi ve belgelerin akıllı tasnif, takip ve
+                                    raporlamalarının yapılmasını sağlar. Daha da önemlisi, bir sözleşmenin hükümlerini analiz
+                                    ederek, farklı kriterlere göre tasnif edilmiş olarak saniyeler içerisinde durum tespit raporunu
+                                    ortaya koyar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/2.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Muhakemat</div>
+                            <div class="card-body">
+                                <h5 class="productText">Davalara Akıllı Bakış</h5>
+                                <p>Şirketler ve avukatlarının tüm dava dosyalarına ilişkin tüm bilgi ve belgelerin tasnifini yapay
+                                    zeka ile yapan ve davalara ilişkin tüm safahat kayıtlarını tek ekranda görebileceğiniz bu ürün,
+                                    taraf olduğunuz tüm dava dosyalarına ilişkin olarak , yapay zeka ile, bütüncül veya arzu
+                                    ettiğiniz kritere göre özelleştirilmiş analizler yapar, yaptığı analizleri dijital olarak da
+                                    görselleştirerek, otomasyonla yönetici raporları haline de getirmektedir.
+                                    <br><br>
+                                    Muhakemat, büyük şirketlerin yekünlü ve dağınık dava dünyasının girift ve muğlak dünyasına
+                                    yalınlaştırışmış ve net bir bakış kabiliyeti sunar.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/3.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Mahfuz</div>
+                            <div class="card-body">
+                                <h5 class="productText">Güvenli, Akıllı ve Entegre Belge Yönetim Sistemi</h5>
+                                <p>Veri-tabanı özelliği yanında, ayrıca yapay zekaya dayalı arşivleme, tasnif, versiyonlama,
+                                    belge paylaşma, belge ve dosya güvenlik sistemleri ve yetki opsiyonları içeren ve de diğer
+                                    Mecellem hukuk teknolojisi ürünleri ile, entegre çalışabilen çok kapsayıcı bir belge yönetim
+                                    sistemidir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/4.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Muamelat</div>
+                            <div class="card-body">
+                                <h5 class="productText">Hata Yapma: Detay Atlama</h5>
+                                <p>Hukuki proje yönetiminin en yalın ama etkin şekilde yürütülmesini amaçlayan bu ürün, bir
+                                    hukuki projenin tüm safahatını tek platform üzerinden sunarken,  projede hiçbir ayrıntının
+                                    atlanmasına fırsat vermeyen bir akıllı sistem ile projenin yönetilmesini sağlayan bütüncül bir
+                                    Hukuki Proje Yönetimi çözümü sunmaktadır</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/5.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Malumat</div>
+                            <div class="card-body">
+                                <h5 class="productText">Hızlı Bilgi, Doğru Karar</h5>
+                                <p>100 milyondan fazla hukuki belgeye sahip ve sürekli güncellenen, belgelerin kaynak ve
+                                    konularına göre tasnif edildiği,  doğal dil işleme ve sair yapay zeka teknikleri ile sadece
+                                    kelime ve kavram değil, anlam taraması da yapabilen kendine ait arama motoru ile
+                                    avukatlar için, araştırmalarını mümkün olan en hızlı ve en isabetli şekilde
+                                    yapabilmelerine imkan sağlayan eşsiz bir bilgi platformudur.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/6.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Müellif</div>
+                            <div class="card-body">
+                                <h5 class="productText">Akıllı Düşünür, Hızlı Yazar: Belge Otomasyon Aracı</h5>
+                                <p>Yapay zeka ile hatasız şekilde tasnif edilmiş çok geniş bir maddeler ve hükümler
+                                    kütüphanesine dayalı olarak,  başta sözleşme, bilgi notu vb. hukuki belgelerin
+                                    üretilmesinde veya üretilmiş belgelerin arzu edilen şekilde tadil edilerek yeniden
+                                    üretilmesini sağlayan bu ürün çok büyük bir zaman tasarrufu yanında, doküman üretme
+                                    kalitesini en üst seviyeye çıkarmaya yardımcı olmaktadır.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/2.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Mahsusat</div>
+                            <div class="card-body">
+                                <h5 class="productText">Hassas Verilere Anonim ve Özenli Koruma</h5>
+                                <p>Bu ürün, her türlü kurumun, her tür hassas verinin kullanımı bağlamında gerekli mahremiyet
+                                    ve gizliliği temini edebilmeleri için anonimleştirmeye dayalı akıllı bir çözüm sunmaktadır. Bu
+                                    ürünle, kullanıcılar sadece KVKK uyumunu temin etmekle kalmayıp, ayrıca hassasiyet
+                                    gerektiren gerek hukuki gerek mali, ticari veya teknik verinin güvenli bir şekilde saklanmasını
+                                    ve paylaşılmasını temin eder.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/4.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Mahir</div>
+                            <div class="card-body">
+                                <h5 class="productText">Kendiliğinden Yürürlüğe Giren Akıllı Sözleşme Mahareti</h5>
+                                <p>Sözleşmeleri, makine öğrenmesi sayesinde icrası takip edilebilen maddelere ayırarak,
+                                    sözleşmelere akıllı belgelere dönüştüren bu ürün,  ‘blokchain’ ve ‘internet of things’in
+                                    sağladığı yetenek sayesinde, şart veya sürelere bağlı olarak yürürlüğe girmesi gereken
+                                    sözleşme hükümlerini otomatik olarak iş süreçlerine entegre ederek, sözleşmelerin
+                                    otomatik olarak yürürlüğe girmesini ve bunun takibini sağlar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/6.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Mülk</div>
+                            <div class="card-body">
+                                <h5 class="productText">Gayrimenkul Hukuki Risk Analizi</h5>
+                                <p>Tüm mevzuat ve idari kararlar çerçevesinde, sisteme tanıtılan bir gayrimenkul gayri
+                                    menkule dair risk ifade eden ibareleri yapay zeka ilerek çıkararak, söz konusu risklerin
+                                    yasal sonuçlarını ve hukuki durum analizini de otomatik olarak dijital rapor haline
+                                    getirmektedir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/5.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">
+                                <img src="/assets/images/img/sliders/mursit.svg" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="productText">Belge Yönetimine Akıllı Kılavuz</h5>
+                                <p>Çok nitelikli bir hukuki bilgisi ve uzmanlığının yapay zeka  ve yazılım ile birleşmesinin
+                                    semeresi olan Mürşit,  hukuk dünyasına ait olan binlerce çeşit evrakı semantik ve fonksiyon
+                                    bazlı olarak kümelemek suretiyle, hukuki anlam ve kullanım açısından birbirleriyle
+                                    ilişkilendirildikleri ontolojik bir haritaya göre tasnif ederek belgelerin en etkili ve verimli
+                                    şekilde bilgi sistemine kaydedilmesini  sağlayan sistemidir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/2.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Münakasa</div>
+                            <div class="card-body">
+                                <h5 class="productText">E-İhale Sistemi İçin En İyi Teklif</h5>
+                                <p>Bu ürün, diğer ürünlerle entegre olması sebebiyle bir ihalenin veri-tabanı ve belge paylaşım aşamasından, due diligence sürecine veya ihale sonucunda kazananla yapılan anlaşmanın otomatik olarak üretilmesine ve imzalanın sözleşmenin yönetilmesine kadar tüm aşamalarını dijital ortamda ve akıllı bir sistemle yapan bir akıllı e-İhale sistemidir.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="middleImg">
+                                <img src="/assets/images/img/sliders/2.png" alt="" class="card-img-top img-fluid">
+                            </div>
+                            <div class="card1Text">Murakabe</div>
+                            <div class="card-body">
+                                <h5 class="productText">Yapay Zeka ile Doğal Olarak Daha Sağlam Durum Tespit Raporu</h5>
+                                <p>Birleşme ve devralma aşamalarında şirketlerin kapsamlı hukuki durum tespit incelemesini,  Mecellem’in diğer ürünlerinde de kullanılan yapay zekayı da kullanarak akıllı bir şekilde yapan Murakaba, insan kaynaklı hataların sıfırlandığı yüksek kalitede bir durum tespit raporunu otomatik olarak üretir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="card1Text">Muhakemat</div>
-            <div class="card-body">
-              <h5 class="productText">Davalara Akıllı Bakış Bütüncül Analiz</h5>
-              <p>Şirketler ve avukatlarının tüm dava dosyalarına ilişkin tüm bilgi ve belgelerin tasnifini yapay zeka
-                ile yapan ve davalara ilişkin tüm safahat kayıtlarını tek ekranda görebileceğiniz bu dava yönetim
-                platformu, taraf olduğunuz tüm dava dosyalarına ilişkin olarak, yapay zeka ile, bütüncül veya arzu
-                ettiğiniz kritere göre özelleştirilmiş analizler yapar; yaptığı analizleri dijital olarak görselleştirir
-                ve otomasyonla özet yönetici raporları haline getirmektedir. </p>
-            </div>
-          </div>
         </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/3.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Mahfuz</div>
-            <div class="card-body">
-              <h5 class="productText">Güvenli, Akıllı ve Entegre Belge Yönetim Sistemi</h5>
-              <p>Veri-tabanı özelliği yanında, ayrıca yapay zekaya dayalı arşivleme, tasnif, versiyonlama, belge
-                paylaşma, belge ve dosya güvenlik sistemleri ve yetki opsiyonları içeren ve de diğer Mecellem hukuk
-                teknolojisi ürünleri ile, entegre çalışabilen çok kapsayıcı bir belge yönetim sistemidir.</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/4.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Muamelat</div>
-            <div class="card-body">
-              <h5 class="productText">Hukuki Proje Yönetimine Dijital Çözüm</h5>
-              <p>Proje-bazlı çalışmalarda hukuki proje yönetiminin en etkin şekilde yürütülmesini amaçlayan bu ürün ile,
-                projelere ilişkin tüm bilgi ve belgeler proje ihtiyacına göre yapay zeka ile tasnif edilirken, tüm proje
-                aşamalarının tek platform üzerinden takip edilip yönetilebildiği bütüncül bir Hukuki Proje Yönetimi
-                çözümü sunmaktadır.</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/5.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Malumat</div>
-            <div class="card-body">
-              <h5 class="productText">Hızlı Bilgi, Doğru Karar</h5>
-              <p>100 milyondan fazla hukuki belgeye sahip ve sürekli güncellenen, belgelerin kaynak ve konularına göre
-                tasnif edildiği, doğal dil işleme ve sair yapay zeka teknikleri ile sadece kelime ve kavram değil, anlam
-                taraması da yapabilen kendine ait arama motoru ile
-                avukatlar için, araştırmalarını mümkün olan en hızlı ve en isabetli şekilde yapabilmelerine imkan
-                sağlayan eşsiz bir bilgi platformudur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/6.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Müellif</div>
-            <div class="card-body">
-              <h5 class="productText">Hızlı Düşünür Akıllı Yazar</h5>
-              <p>Yapay zeka ile çok detaylı tasnif edilmiş , ve çok kapsamlı bir hükümler ve belge taslaklar
-                kütüphanesine dayalı olarak, başta sözleşme, bilgi notu vb. hukuki belgelerin üretilmesinde veya
-                üretilmiş belgelerin arzu edilen şekilde tadil edilerek yeniden üretilmesini sağlayan bu ürün çok büyük
-                bir zaman tasarrufu yanında, doküman üretme kalitesini en üst seviyeye çıkarmaya yardımcı olmaktadır.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/2.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Mahsusat</div>
-            <div class="card-body">
-              <h5 class="productText">Kişisel Verilere Anonim Koruma</h5>
-              <p>KVKK kapsamında, şirketlerin sakladığı ve paylaştığı belgelerdeki kişisel verilerin yapay zeka ile
-                anonimleştirilerek dijital olarak güvenli bir şekilde yönetilmesini sağlar.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/4.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Mahir</div>
-            <div class="card-body">
-              <h5 class="productText">Sözleşmelerin Akıllı Takibinde Mahir</h5>
-              <p>Sözleşmeleri, makine öğrenmesi sayesinde icrası takip edilebilen maddelere ayırarak akıllı belgelere
-                dönüştüren bu ürün ile takip edilmesi gereken sözleşme hükümleri otomatik olarak yönetici takip
-                sistemlerine ve iş süreçlerine entegre ederek, sözleşmelerin akıllı takibini sağlar.</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/6.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">Mülk</div>
-            <div class="card-body">
-              <h5 class="productText">Gayrimenkul Hukuki Durum Tespit Sistemi</h5>
-              <p>Tüm mevzuat ve idari kararlar çerçevesinde, sisteme tanıtılan bir gayrimenkul gayri menkule dair risk
-                ifade eden ibareleri yapay zeka ilerek çıkararak, söz konusu risklerin yasal sonuçlarını ve hukuki durum
-                analizini de otomatik olarak dijital rapor haline getirmektedir.</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="middleImg">
-              <img src="img/sliders/5.png" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card1Text">
-              <img src="img/sliders/mursit.svg" alt="" class="card-img-top img-fluid">
-            </div>
-            <div class="card-body">
-              <h5 class="productText">Belge Yönetimine Akıllı Kılavuz</h5>
-              <p>Çok nitelikli bir hukuki tecrübenin yapay ile birleştirilerek, hukuk dünyasına ait olan binlerce çeşit
-                evrakın, türünü, konusunu, mahiyetini ve kullanım alanını dikkate alarak en etkin, en doğru ve bir anlam
-                bütünlüğü içerisinde birbirleriyle ilişkilendirilebilecek şekilde kategorize edilerek sisteme
-                kaydedilmesini sağlayan otomasyon sistemidir.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
     </div>
+</div>
+<!--Carousel Wrapper-->
+
+<!--/.Carousel Wrapper-->
+<!-- contact -->
+<!-- <div class="container-fluid py-5" id="contact">
+  <div class="row justify-content-md-center ">
+    <div class="col-md-4 text-center text-md-left pt-5 contactus">
+      <h3 class="font-weight-bold">İletişime Geçin</h3>
+      <p class="my-4 font-weight-bold">
+        Te iisque labitur eos, nec sale argumentum scribentur,
+        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
+      </p>
     </div>
-  </div>
-  </div>
-  <!--Carousel Wrapper-->
+    <div class="col-md-6 px-5">
+      <div class="row pt-4">
 
-  <!--/.Carousel Wrapper-->
-  <!-- contact -->
-  <!-- <div class="container-fluid py-5" id="contact">
-    <div class="row justify-content-md-center ">
-      <div class="col-md-4 text-center text-md-left pt-5 contactus">
-        <h3 class="font-weight-bold">İletişime Geçin</h3>
-        <p class="my-4 font-weight-bold">
-          Te iisque labitur eos, nec sale argumentum scribentur,
-          <br> augue disputando in vim. Erat fugit sit at, ius lorem.
-        </p>
-      </div>
-      <div class="col-md-6 px-5">
-        <div class="row pt-4">
+        <div class="col-xs-12">
 
-          <div class="col-xs-12">
+          <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST"
+            role="form">
 
-            <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST"
-              role="form">
+            <div class="form-group">
+              <label class="form-label" id="nameLabel" for="name"></label>
+              <input type="text" class="form-control font-weight-bold" id="name" name="name" placeholder="İSİM SOYAD"
+                tabindex="1">
+            </div>
 
-              <div class="form-group">
-                <label class="form-label" id="nameLabel" for="name"></label>
-                <input type="text" class="form-control font-weight-bold" id="name" name="name" placeholder="İSİM SOYAD"
-                  tabindex="1">
-              </div>
+            <div class="form-group">
+              <label class="form-label" id="emailLabel" for="email"></label>
+              <input type="email" class="form-control font-weight-bold" id="email" name="email" placeholder="E-POSTA"
+                tabindex="2">
+            </div>
 
-              <div class="form-group">
-                <label class="form-label" id="emailLabel" for="email"></label>
-                <input type="email" class="form-control font-weight-bold" id="email" name="email" placeholder="E-POSTA"
-                  tabindex="2">
-              </div>
+            <div class="form-group">
+              <label class="form-label" id="subjectLabel" for="sublect"></label>
+              <input type="text" class="form-control font-weight-bold" id="subject" name="subject"
+                placeholder="TELEFON NUMARASI" tabindex="3">
+            </div>
 
-              <div class="form-group">
-                <label class="form-label" id="subjectLabel" for="sublect"></label>
-                <input type="text" class="form-control font-weight-bold" id="subject" name="subject"
-                  placeholder="TELEFON NUMARASI" tabindex="3">
-              </div>
+            <div class="form-group">
+              <label class="form-label" id="messageLabel" for="message"></label>
+              <textarea rows="6" cols="60" name="message" class="form-control font-weight-bold" id="message"
+                placeholder="MESAJINIZ" tabindex="4"></textarea>
+            </div>
 
-              <div class="form-group">
-                <label class="form-label" id="messageLabel" for="message"></label>
-                <textarea rows="6" cols="60" name="message" class="form-control font-weight-bold" id="message"
-                  placeholder="MESAJINIZ" tabindex="4"></textarea>
-              </div>
+            <div class="text-center margin-top-25 float-left">
+              <button type="submit" class="btn btn-mod btn-border btn-large">GÖNDER</button>
+            </div>
 
-              <div class="text-center margin-top-25 float-left">
-                <button type="submit" class="btn btn-mod btn-border btn-large">GÖNDER</button>
-              </div>
+          </form><!-- End form -->
 
-            </form><!-- End form -->
+</div><!-- End col -->
 
-  </div><!-- End col -->
+</div><!-- End row -->
+</div>
+</div>
+</div> -->
 
-  </div><!-- End row -->
-  </div>
-  </div>
-  </div> -->
-
-  <!-- copyright -->
-  <div class="container" id="footer">
+<!-- copyright -->
+<div class="container" id="footer">
     <section style="height:100px;"></section>
     <!----------- Footer ------------>
     <footer class="footer-bs">
-      <div class="row justify-content-between">
-        <div class="col-md-4 footer-brand order-first order-lg-first order-md-first order-sm-first">
-          <img src="img/M_icon.svg" width="80" alt="Mecellem" class="d-inline-block align-middle mr-2 float-left">
-          <p class="mt-1">Hukuki Bilgi ve Belge Yönetim Sistemleri & Akıllı Hukuk Hizmetleri Platformu</p>
-          <section style="height:75px;"></section>
-          <a href="https://newmind.ai">© NM 2019 - Bilgi Yönetim Sistemleri</a>
-          <section style="height:35px;"></section>
+        <div class="row justify-content-between">
+            <div class="col-md-4 footer-brand order-first order-lg-first order-md-first order-sm-first">
+                <img src="/assets/images/img/M_icon.svg" width="80" alt="Mecellem" class="d-inline-block align-middle mr-2 float-left">
+                <p class="mt-1">Akıllı Hukuk - Teknoloji Çözümleri & Hukuki Bilgi ve Risk Yönetim Platformu</p>
+                <section style="height:75px;"></section>
+                <a href="https://newmind.ai">© NM 2019 - Bilgi Yönetim Sistemleri</a>
+                <section style="height:35px;"></section>
+            </div>
+            <div class="col-md-4 footer-brand text-right float-right order-last order-lg-last order-md-last order-sm-last">
+                <label>iTower Bomonti Merkez Mah. Akar Cad.</label>
+                <label>No:3 Kat:30 34381 Şişli/Istanbul Turkey</label>
+                <label>+90 212 777 88 90</label>
+                <section style="height:20px;"></section>
+                <a href="https://newmind.ai"><img src="/assets/images/img/newmind-logo.png" width="200" alt="Newmind"
+                                                  class="mt-2 float-right"></a>
+                <p>
+                    <section style="height:35px;"></section>
+                    <a class="text-right float-right" href="mailto:info@newmind.ai">info@newmind.ai</a>
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 footer-brand text-right float-right order-last order-lg-last order-md-last order-sm-last">
-          <label>iTower Bomonti Merkez Mah. Akar Cad.</label>
-          <label>No:3 Kat:30 34381 Şişli/Istanbul Turkey</label>
-          <label>+90 212 777 88 90</label>
-          <section style="height:20px;"></section>
-          <a href="https://newmind.ai"><img src="img/newmind-logo.png" width="200" alt="Newmind"
-            class="mt-2 float-right"></a>
-          <p>
-            <section style="height:35px;"></section>
-            <a class="text-right float-right" href="mailto:info@newmind.ai">info@newmind.ai</a>
-          </p>
-        </div>
-      </div>
-      <section style="height:30px;"></section>
+        <section style="height:30px;"></section>
     </footer>
-  </div>
+</div>
 
-  <!-- AOS -->
-  <script src="js/aos.js"></script>
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/swiper.js"></script>
-  <script src="js/jquery.bgswitcher.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      allowSlideNext: true,
-      spaceBetween: 150,
-      slideShadows: false,
-      breakpointsBase: 'container',
-      autoplay: {
-        delay: 20000,
-      },
-      loop: true,
-      slidesPerView: '3',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 150,
-        modifier: 1,
-      },
-      breakpoints: {
-        1450: {
-          slidesPerView: 3,
-          spaceBetween: 100,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        },
-        1250: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-        900: {
-          slidesPerView: 2,
-          spaceBetween: 0
-        },
-        600: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        },
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        }
-      }
-    });
-
-    $("#main").bgswitcher({
-      images: ["img/background/gorsel1.png", "img/background/gorsel2.jpg", "img/background/gorsel4.jpg", "img/background/gorsel5.jpg", "img/background/gorsel6.jpg", "img/background/gorsel7.jpg", "img/background/gorsel8.jpg"],
-      interval: 20000,
-      loop: true
-    });
-
-    $("#main").on("click", function () {
-      $('#main').bgswitcher("next");
-    });
-  </script>
-  <script>
+<!-- AOS -->
+<script src="./js/aos.js"></script>
+<script src="./js/jquery-3.3.1.slim.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/jquery.bgswitcher.js"></script>
+<script src="./js/custom.js"></script>
+<script>
     AOS.init({
     });
-  </script>
+</script>
 </body>
 
 </html>

@@ -209,3 +209,63 @@ $(document).mouseup(function(e)
       $('.inline-choice.active ul').attr("style", "border-bottom: 1px solid #fff");
     }
 });
+
+var swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  allowSlideNext: true,
+  spaceBetween: 150,
+  slideShadows: false,
+  breakpointsBase: 'container',
+  autoplay: {
+      delay: 20000,
+  },
+  loop: true,
+  slidesPerView: '3',
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 150,
+      modifier: 1,
+  },
+  breakpoints: {
+      1450: {
+          slidesPerView: 3,
+          spaceBetween: 100,
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      },
+      1250: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+      },
+      900: {
+          slidesPerView: 2,
+          spaceBetween: 0
+      },
+      600: {
+          slidesPerView: 1,
+          spaceBetween: 0
+      },
+      300: {
+          slidesPerView: 1,
+          spaceBetween: 0
+      }
+  }
+});
+$("#main").bgswitcher({
+  images: ["img/background/gorsel1.png", "img/background/gorsel2.jpg", "img/background/gorsel4.jpg", "img/background/gorsel5.jpg", "img/background/gorsel6.jpg", "img/background/gorsel7.jpg", "img/background/gorsel8.jpg"],
+  interval: 20000,
+  loop: true
+});
+
+$("#main").on("click", function () {
+  $('#main').bgswitcher("next");
+});

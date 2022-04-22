@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, shrink-to-fit=no">
   <title>Mecellem</title>
   <meta name="description" content="Mecellem">
   <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.css" />
   <!-- AOS -->
   <link rel="stylesheet" href="css/aos.css">
 </head>
@@ -78,7 +78,7 @@
   </div>
   <!-- MECELLEM NEDIR -->
   <div class="container-fluid py-5 d-flex mb-6" id="section2">
-    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center">
+    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center" style="overflow-x: hidden">
       <div data-aos="fade-right" data-aos-duration="1000" class="col-md-4">
         <h1 class="font-weight-bold align-self-left contactabout">What Is Mecellem</h1>
         </p>
@@ -100,7 +100,7 @@
   </div>
   <!-- NEDEN MECELLEM -->
   <div class="container-fluid py-5 d-flex mb-6" id="whymecellem">
-    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center">
+    <div class="row text-center mt-5 align-items-center justify-content-md-center align-self-center" style="overflow-x: hidden">
       <div data-aos="fade-left" data-aos-duration="1000"
         class="col-md-4 order-md-last order-lg-last order-sm-first order-md-last order-first">
         <h1 class="font-weight-bold align-self-right contactabout">Why Mecellem</h1>
@@ -400,71 +400,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/swiper.js"></script>
-  <script src="js/jquery.bgswitcher.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      allowSlideNext: true,
-      spaceBetween: 150,
-      slideShadows: false,
-      breakpointsBase: 'container',
-      autoplay: {
-        delay: 20000,
-      },
-      loop: true,
-      slidesPerView: '3',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 150,
-        modifier: 1,
-      },
-      breakpoints: {
-        1450: {
-          slidesPerView: 3,
-          spaceBetween: 100,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        },
-        1250: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-        900: {
-          slidesPerView: 2,
-          spaceBetween: 0
-        },
-        600: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        },
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        }
-      }
-    });
-
-    $("#main").bgswitcher({
-      images: ["img/background/gorsel1.png", "img/background/gorsel2.jpg", "img/background/gorsel4.jpg", "img/background/gorsel5.jpg", "img/background/gorsel6.jpg", "img/background/gorsel7.jpg", "img/background/gorsel8.jpg"],
-      interval: 20000,
-      loop: true
-    });
-
-    $("#main").on("click", function () {
-      $('#main').bgswitcher("next");
-    });
-  </script>
   <script>
     AOS.init({
     });

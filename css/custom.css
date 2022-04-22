@@ -8,26 +8,29 @@
 /********** common setting **********/
 @font-face {
   font-family: Proxima;
-  src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+  src: url("/assets/fonts/landing_fonts/ProximaNova-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: ProximaBold;
   font-weight: bold;
-  src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
+  src: url("/assets/fonts/landing_fonts/ProximaNova-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: ProximaLight;
   font-weight: bold;
-  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+  src: url("/assets/fonts/landing_fonts/ProximaNova-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: Eboracum;
-  src: url("../fonts/Eboracum_tr.ttf") format("truetype");
+  src: url("/assets/fonts/landing_fonts/Eboracum_tr.ttf") format("truetype");
 }
-
+b{
+  font-family: ProximaBold !important;
+  font-weight: bold !important;
+}
 html,
 body,
 html * {
@@ -53,7 +56,15 @@ a,
 button {
   cursor: pointer;
 }
-
+.inlice-choice {
+  margin-bottom: 1em !important;
+}
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-collapse {
+    overflow: hidden;
+    height: 100px;
+  }
+}
 .jumbotron {
   margin-bottom: 0 !important;
   border-radius: 0 !important;
@@ -121,6 +132,7 @@ button {
 }
 .navbar .nav-link {
   color: white !important;
+  font-size: 14px;
 }
 
 #main {
@@ -129,37 +141,60 @@ button {
   transition: background-image 1s linear;
   background-size: cover !important;
   background-image: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      from(rgba(0, 0, 0, 0.6)),
-      color-stop(27%, transparent)
-    ),
-    -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(27%, transparent)),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), color-stop(27%, transparent)),
-    url(../img/background/gorsel1.png);
+          linear,
+          right top,
+          left top,
+          from(rgba(0, 0, 0, 0.6)),
+          color-stop(27%, transparent)
+  ),
+  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(27%, transparent)),
+  -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), color-stop(27%, transparent)),
+  url(/assets/images/img/background/gorsel1.png);
   background-image: -webkit-linear-gradient(
-      right,
-      rgba(0, 0, 0, 0.6),
-      transparent 27%
-    ),
-    -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), transparent 27%),
-    -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), transparent 27%),
-    url(../img/background/gorsel1.png);
+          right,
+          rgba(0, 0, 0, 0.6),
+          transparent 27%
+  ),
+  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), transparent 27%),
+  -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), transparent 27%),
+  url(/assets/images/img/background/gorsel1.png);
   background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.6),
-      transparent 27%
-    ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 27%),
-    linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 27%),
-    url(../img/background/gorsel1.png);
+          to left,
+          rgba(0, 0, 0, 0.6),
+          transparent 27%
+  ),
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 27%),
+  linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 27%),
+  url(/assets/images/img/background/gorsel1.png);
 }
 
 #main {
   height: 52rem;
 }
 
+
+.navbar-nav .nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.fixed-top .inline-choice > span:after {
+  border-color: gray transparent;
+}
+.mursit-img{
+  width: 158px !important;;
+  height: auto !important;;
+  transform: scale(1) !important;
+}
+
+.inline-choice ul {
+  border-color: gray !important;
+}
+.inlice-choice.active ul{
+  border-color: gray !important;
+}
 @media (min-width: 576px) {
   header {
     position: relative;
@@ -183,7 +218,7 @@ button {
     margin-top: 3rem;
   }
   .switch {
-    background-image: url(../img/switchIcon.svg);
+    background-image: url(/assets/images/img/switchIcon.svg);
     position: absolute;
     margin: 0 auto;
     height: 70px;
@@ -192,9 +227,11 @@ button {
     background-repeat: no-repeat;
     left: 50%;
     top: 44rem;
+    bottom: 30px !important;
+    top: unset !important;
   }
   .switchInner {
-    background-image: url(../img/switchInner.svg);
+    background-image: url(/assets/images/img/switchInner.svg);
     position: absolute;
     margin: 0 auto;
     height: 70px;
@@ -207,9 +244,30 @@ button {
     transition: 0.6s;
     -webkit-animation: MoveUpDown 1.7s linear infinite;
     animation: MoveUpDown 1.7s linear infinite;
+    bottom: 30px !important;
+    top: unset !important;
   }
 }
+.full-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.full-container > *{
+  pointer-events: all;
+}
 
+.section-plus{
+  padding-top: 0 !important;
+  padding-left: 30px;
+  height: calc(100% - 150px) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @-webkit-keyframes MoveUpDown {
   from {
     -webkit-transform: translateY(0px);
@@ -287,16 +345,16 @@ button {
 
 .middleImg {
   background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(35%, transparent),
-    to(#191919)
+          linear,
+          left bottom,
+          left top,
+          color-stop(35%, transparent),
+          to(#191919)
   );
   background-image: -webkit-linear-gradient(
-    bottom,
-    transparent 35%,
-    #191919 100%
+          bottom,
+          transparent 35%,
+          #191919 100%
   );
   background-image: linear-gradient(to top, transparent 35%, #191919 100%);
 }
@@ -319,7 +377,7 @@ button {
 
 #section2 {
   background: #212121;
-  background-image: url(../img/mecellemnedir.svg);
+  background-image: url(/assets/images/img/mecellemnedir.svg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: auto;
@@ -329,7 +387,7 @@ button {
 
 #whymecellem {
   background: #212121;
-  background-image: url(../img/nedenmecellem.svg);
+  background-image: url(/assets/images/img/nedenmecellem.svg);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: auto;
@@ -500,6 +558,9 @@ a.btn-mod {
   .inline-choice {
     margin-left: 2rem !important;
   }
+  .container {
+    overflow-x: hidden;
+  }
 }
 
 .aboutus p {
@@ -644,8 +705,8 @@ a.btn-mod {
   height: 52rem;
   width: 100%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent 27%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 27%),
-    linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 27%);
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 27%),
+  linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 27%);
 }
 
 .section1 {
@@ -721,11 +782,11 @@ a.btn-mod {
 
 
 .inline-choice {
-	color: white;
-	display: inline-flex;
-	flex-direction: column;
-	width: 5rem;
-	text-align: center;
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  width: 5rem;
+  text-align: center;
 }
 
 .inline-choice > span {
@@ -742,67 +803,68 @@ a.btn-mod {
   line-height: 2em;
 }
 .inline-choice.active > span {
-	background: transparent;
-	border-bottom: none !important;
+  background: transparent;
+  border-bottom: none !important;
   border-radius: 1.15em 1.15em 0em 0em;
   color: orange;
 }
 
 .inline-choice > span:after {
-	border-width: 0.25em 0.25em 0 0.25em;
+  border-width: 0.25em 0.25em 0 0.25em;
   border-style: solid;
   border-color: #fff transparent;
   content: "";
   height: 0;
   margin-top: -3px;
-	position: absolute;
+  position: absolute;
   right: 0.85em;
-	top: 50%;
-	transition: border 0.2s;
-	width: 0; }
+  top: 50%;
+  transition: border 0.2s;
+  width: 0; }
 .inline-choice.active > span:after {
-	border-color: #fff transparent;
+  border-color: #fff transparent;
 }
 .content-container.disabled .inline-choice > span::after {
-	border-color: #aaa transparent;
+  border-color: #aaa transparent;
 }
 
 .inline-choice ul {
   border-top: none;
-	border-radius: 0 0 1.15em 1.15em;
-	left: 0;
+  border-radius: 0 0 1.15em 1.15em;
+  left: 0;
   list-style: none;
-	margin: 0;
-	max-height: 0;
-	overflow: hidden;
-	padding: 0;
-	position: relative;
-	right: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  right: 0;
   top: 100%;
 }
 .inline-choice.active ul {
   border-bottom: thin solid #222;
-	box-shadow: 0 0.06em 0.06em rgba(0,0,0,.25);
+  box-shadow: 0 0.06em 0.06em rgba(0,0,0,.25);
   max-height: 400px;
   border-left: 1px solid white;
-	border-bottom: 1px solid white;
-	border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .inline-choice li a {
-	background: transparent;
+  background: transparent;
   display: block;
   text-decoration: none;
   color: #fff;
   padding: 0em 1.25em 0.25em 0.25em;
 }
+
 .inline-choice li a:hover {
-	color: orange;
+  color: orange;
 }
 
 .inline-choice:focus {
-	outline: thin dotted;
-	outline-offset: 2px;
+  outline: thin dotted;
+  outline-offset: 2px;
 }
 
 .inline-choice.active {
@@ -816,4 +878,12 @@ a.btn-mod {
 
 .lightLanguage {
   color: white;
+}
+
+.fixed-top .inline-choice.active > span:after {
+  border-color: gray transparent;
+}
+
+.section-plus{
+  overflow: hidden;height: auto !important;
 }
